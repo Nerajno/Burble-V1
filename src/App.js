@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 
-const FEATURED_API =
-  "https://api.themoviedb.org/3/discover/movie?api_key=cc9531648a8a47fec779d75e4d9461f6&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1";
 
-const SEARCH_API="https://api.themoviedb.org/3/search/movie?&api_key=a607d8d4f02314295a958f2286e64a46&query=";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -18,12 +15,18 @@ function App() {
   //     setMovies(data.results);
   //   });
   // }
-
+ console.log(process.env.FEATURED_API);
   useEffect(() => {
-    fetch(FEATURED_API)
+    fetch(process.env.FEATURED_API, {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+
+    })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
+
         setMovies(data.results);
       });
   }, []);
@@ -31,7 +34,7 @@ function App() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if(searchTerm){
-    fetch(SEARCH_API+searchTerm)
+    fetch(process.env.SEARCH_API+searchTerm)
       .then((res) => res.json())
       .then((data) => {
          console.log(data);
