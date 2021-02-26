@@ -15,9 +15,9 @@ function App() {
   //     setMovies(data.results);
   //   });
   // }
- console.log(process.env.FEATURED_API);
+ console.log(process.env.REACT_APP_FEATURED_API);
   useEffect(() => {
-    fetch(process.env.FEATURED_API, {
+    fetch(process.env.REACT_APP_FEATURED_API, {
       headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -34,7 +34,7 @@ function App() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if(searchTerm){
-    fetch(process.env.SEARCH_API+searchTerm)
+    fetch(process.env.REACT_APP_SEARCH_API+searchTerm)
       .then((res) => res.json())
       .then((data) => {
          console.log(data);
