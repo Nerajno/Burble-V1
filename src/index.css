@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  background-color:blueviolet;
+  background-color:#e50914;;
   padding: 1rem;
   justify-content: flex-end;
   display: flex;
@@ -36,10 +36,28 @@ header {
   font-size: 1.2rem;
   font-weight: 400;
   border-radius: 50px;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: #e50914;
   padding: 0.5rem 1.5rem;
 }
+
+/* :placeholder-shown */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#e50914;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:#e50914;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#e50914;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#e50914;
+}
+
+/* :placeholder-shown */
+
+
 
 .search:focus {
   outline: none;
