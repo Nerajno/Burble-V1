@@ -1,7 +1,7 @@
 ### Todos
 
 - [ ] Create a good ReadMe
-- [ ] Hide api keys
+- [ ] Add data security
 - [ ] Hide api~addresses/ paths
-- [ ] new color scheme
+- [ ] new color scheme (Netflix)
 - [ ] add back to portfolio btn or back to github btn
