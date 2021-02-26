@@ -1,14 +1,12 @@
 import React from 'react'; 
 
-
-
-const setVoteClass = (vote) => {
+const setVoteClass=(vote)=>{
     if(vote >=7){
-        return 'green'
+        return "green"
     }else if (vote >= 5){
-        return 'orange'
+        return "orange"
     } else {
-        return 'red'
+        return "red";
     }
 }
 
