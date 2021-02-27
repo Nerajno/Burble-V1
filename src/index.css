@@ -66,7 +66,7 @@ header {
 .movie{
   width: 300px;
   margin: 1rem;
-  background-color: blueviolet;
+  background-color:#e50914;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   overflow: hidden;
@@ -91,7 +91,7 @@ header {
 }
 
 .movie-over {
-  background-color: antiquewhite;
+  background-color: #c50a13d5;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -99,7 +99,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  color: blueviolet;
+  color:white;
   padding: 1rem;
   overflow: auto;
   max-height: 100%;
@@ -112,7 +112,7 @@ header {
 }
 
 .tag{
-  background-color: rgb(194, 108, 216);
+  background-color: rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 5px;
   font-weight: bold;

@@ -1,7 +1,10 @@
 ### Todos
 
 - [ ] Create a good ReadMe
-- [ ] Add data securuity
+- [x] Add data security
 - [ ] Hide api~addresses/ paths
-- [ ] new color scheme (Netflix)
-- [ ] add back to portfolio btn or back to github btn
+- [ ] Apply a new color scheme (use Netflix as a reference)
+- [ ] Add back to portfolio btn or back to github btn.
+- [ ] Create a sticky navbar.
+- [ ] Create a parallax scrolling effect with a static background. 
+- [ ] Create a footer.
