@@ -7,15 +7,15 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); 
 
-  // const getMovies = (API) =>{
-  //   fetch(FEATURED_API)
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     // console.log(data);
-  //     setMovies(data.results);
-  //   });
-  // }
- console.log(process.env.REACT_APP_FEATURED_API);
+  const getMovies = (API) =>{
+    fetch(API)
+    .then((res) => res.json())
+    .then((data) => {
+      // console.log(data);
+      setMovies(data.results);
+    });
+  }
+
   useEffect(() => {
     fetch(process.env.REACT_APP_FEATURED_API, {
       headers : { 
@@ -34,12 +34,7 @@ function App() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if(searchTerm){
-    fetch(process.env.REACT_APP_SEARCH_API+searchTerm)
-      .then((res) => res.json())
-      .then((data) => {
-         console.log(data);
-        setMovies(data.results);
-      });
+      getMovies(process.env.REACT_APP_SEARCH_API+ searchTerm)
       setSearchTerm('');
     }
   };
