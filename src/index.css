@@ -6,11 +6,16 @@
 }
 
 body {
-  background-color: #22254b;
   color: antiquewhite;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  
+  background-image: url("https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .root {
   flex-direction: column;
@@ -21,6 +26,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 header {
@@ -91,7 +97,7 @@ header {
 }
 
 .movie-over {
-  background-color: #c50a13d5;
+  background-color: #c50a13d8;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -129,3 +135,8 @@ header {
 .tag.red{
   color: red; 
 }
+
+/* .react-parallax-bgimage {
+  width: 100vw;
+  height:100vh;
+} */

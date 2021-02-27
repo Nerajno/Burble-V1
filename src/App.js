@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
-
+import Button from 'react-bootstrap/Button'
 
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     fetch(API)
     .then((res) => res.json())
     .then((data) => {
-      // console.log(data);
-      setMovies(data.results);
+      console.log(data);
+    setMovies(data.results);
     });
   }
 
@@ -22,11 +22,9 @@ function App() {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
        }
-
     })
       .then((res) => res.json())
       .then((data) => {
-
         setMovies(data.results);
       });
   }, []);
@@ -44,12 +42,12 @@ function App() {
   };
 
   return (
-    <>
+    <> 
     <header>
       <form onSubmit={handleOnSubmit}>
       <input className="search" type="search" value={searchTerm} onChange={handleOnChange} placeholder="Search...." />
       </form>
-      </header>
+    </header>
     <div className="movie-container">
       {movies.length > 0 &&
         movies.map((movie) => <Movie key={movie.id} {...movie} />)}
