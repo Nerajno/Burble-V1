@@ -5,7 +5,7 @@
 - [ ] Create a good ReadMe
 - [ ] Hide api~addresses/ paths
 - [ ] Add back to portfolio btn or back to github btn.
-- [ ] Create a sticky navbar.
+- [x] Create a sticky navbar.
 - [ ] Create a default width for the span tag. 
 - [x] Create a parallax scrolling effect with a static background.
 - [ ] Create a footer.
