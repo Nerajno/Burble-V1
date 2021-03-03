@@ -1,6 +1,6 @@
 {
   "homepage": "https://nerajno.github.io/Burble",
-  "name": "Burble ~ a React-based movie app",
+  "name": "Burble",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
