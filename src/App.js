@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
-// import Button from 'react-bootstrap/Button'
+import {Button, Form, Container, Row} from 'react-bootstrap'
 
 
 function App() {
@@ -42,9 +42,14 @@ function App() {
   };
 
   return (
-    <> 
+    <>
+     
     <header>
+
       <form onSubmit={handleOnSubmit}>
+      <Button variant="primary">Burble</Button>{' '}
+      <Button variant="primary">Github</Button>{' '}
+      <Form.Check type="switch" label="Sort Movies" id="disabled-custom-switch" />
       <input className="search" type="search" value={searchTerm} onChange={handleOnChange} placeholder="Search...." />
       </form>
     </header>
