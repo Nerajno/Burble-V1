@@ -120,11 +120,20 @@ header {
   transform: translateY(0%);
 }
 
+span {
+  background-color: aqua;
+}
+
 .tag{
   background-color: rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 5px;
   font-weight: bold;
+  height: auto;
+}
+
+.tag.innerHTML{
+  margin:auto;
 }
 
 .tag.green{
