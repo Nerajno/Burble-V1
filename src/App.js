@@ -45,11 +45,14 @@ function App() {
     <>
      
     <header>
-
-      <form onSubmit={handleOnSubmit}>
+      <div className="navBtns">      
       <Button variant="primary">Burble</Button>{' '}
       <Button variant="primary">Github</Button>{' '}
-      <Form.Check type="switch" label="Sort Movies" id="disabled-custom-switch" />
+      <Form className="sortnBox">
+        <Form.Check type="switch" id="custom-switch" label="Sort Movies "/>
+      </Form>
+      </div>
+      <form onSubmit={handleOnSubmit}>
       <input className="search" type="search" value={searchTerm} onChange={handleOnChange} placeholder="Search...." />
       </form>
     </header>
