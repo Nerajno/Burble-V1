@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
-import {Button, Form, Container, Row} from 'react-bootstrap'
+import {Button, Form} from 'react-bootstrap'
 
 
 function App() {
