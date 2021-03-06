@@ -1,82 +1,55 @@
-### Todos ~ Basic
-
-- [x] Add data security
-- [x] Apply a new color scheme (use Netflix as a reference)
-- [ ] Create a good ReadMe
-- [ ] Hide api~addresses/ paths
-- [ ] Add back to portfolio btn or back to github btn.
-- [x] Create a sticky navbar.
-- [ ] Create a default width for the span tag. 
-- [x] Create a parallax scrolling effect with a static background.
-- [ ] Create a footer.
-- [ ] Integrate Cypress testing.
-
-### Todos ~ Level 2
-- [ ] Click on each movie image to open wikipedia article in new tab
-- [ ] Load images ontyped in search
-- [ ] Create a sort movies bar loaded by year, ratings, alphabetically.
-- [ ] Add centered released date info to each card. 
-
-
-# Project Title
-
-Simple overview of use/purpose.
+# Burble
+Simple Movie Search WebApp
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+- Webapp with React, Bootstrap, Omgdb
+- Search functionalitiies
 
-## Getting Started
+## Screenshot
 
 ### Dependencies
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
 
-### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
 ## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Create issues on the repo if errors are seen and they will be addressed them.
 
 ## Authors
 
-Contributors names and contact info
+[Me/@Nerajno](https://twitter.com/nerajno)  
+[@Gerdeth](https://twitter.com/_I_am_Ge)
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+MIT License
+
+Copyright (c) [2021] [Me/@Nerajno](https://twitter.com/nerajno)  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [Florin Pop's Movie App](https://youtu.be/sZ0bZGfg_m4)
+* [Florin Pop](https://twitter.com/florinpop1705)
