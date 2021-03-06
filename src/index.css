@@ -99,7 +99,7 @@ header {
   margin: 0; 
 }
 
-.movie-over {
+.movie-overview {
   background-color: #c50a13d8;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -116,8 +116,9 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-.movie:hover .movie-over {
-  transform: translateY(0%);
+.movie:hover .movie-overview {
+  /* transform: translateY(0%); */
+  color: aquamarine;
 }
 
 span {
