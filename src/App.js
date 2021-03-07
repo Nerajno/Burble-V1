@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
-import {Button, Form} from 'react-bootstrap'
+import {Button, Form} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
     <header>
       <div className="navBtns">      
       <Button variant="primary">Burble</Button>{' '}
-      <Button variant="primary">Github</Button>{' '}
+      <Button className="gitHubLink" variant="link" href="https://github.com/Nerajno/Burble">Github</Button>{' '}
       <Form className="sortnBox">
         <Form.Check type="switch" id="custom-switch" label="Sort Movies "/>
       </Form>
