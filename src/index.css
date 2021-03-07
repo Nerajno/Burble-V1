@@ -48,7 +48,7 @@ header {
   align-content: center;
 }
 
-Button{
+.gitHubLink, Button{
   background-color:#e50914;
   color: rgb(252, 252, 252);
   padding: 0.4rem;
@@ -60,9 +60,10 @@ Button{
   border-radius: 5px;
   border: none;
   transition: transform 0.1s linear;
+  text-decoration: none;
 }
 
-Button:hover {
+.gitHubLink:hover,Button:hover {
   color: #e50914;
   background-color:  #fcfcfc;;
 
