@@ -1,33 +1,60 @@
-# Burble
-Simple Movie Search WebApp
+# Burble ~ Ongoing
+A React-Based Simple Movie Search WebApp
 
 ## Description
+A React movie app built following [Florin Pop's React Movie app](https://youtu.be/sZ0bZGfg_m4).
+It uses reactBootstrap for buttons and forms, use theMovieDb api for movie info and search functionalities.
 
-- Webapp with React, Bootstrap, Omgdb
-- Search functionalitiies
+Improvements include :
+- Link to Github repo.
+- Sticky navbar.
+- A sort movies feature.
+- Filtered Results (it displays results as you type).
+- Home button (Burble) ~ having app reload functionality.
+- Themed using NetFlix's theme.
+- Themed footer.
+
 
 ## Screenshot
+![Burble Screenshot]()
 
 ### Dependencies
+Uses:
+- [React](https://reactjs.org/) ~ Framework
+- [TMDB api](https://www.themoviedb.org/documentation/api?language=en-US) ~ API
+- [React Bootstrap](https://react-bootstrap.github.io/) ~ Styling
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### Todos ~ Basic
+- [x] Add data security
+- [x] Apply a new color scheme (use Netflix as a reference)
+- [x] Create a good ReadMe template.
+- [ ] Hide api~addresses/ paths
+- [x] Add back to portfolio btn or back to github btn.
+- [x] Create a sticky navbar.
+- [x] Create a default width for the span tag. 
+- [x] Create a parallax scrolling effect with a static background.
+- [ ] Create a footer.
+- [x] Integrate Cypress testing.
+- [ ] Create 7  handwritten tests.
+- [ ] Make mobile compatible.
+- [ ] Create a reload action using the home.
 
-
-
+### Todos ~ Level 2
+- [ ] Click on each movie image to open wikipedia article in new tab.
+- [ ] Load cards ontyped in search.
+- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
+- [ ] Create an element that opens on click or double tap for each card.
+ 
 ## Help
 Create issues on the repo if errors are seen and they will be addressed them.
 
 ## Authors
-
 [Me/@Nerajno](https://twitter.com/nerajno)  
 [@Gerdeth](https://twitter.com/_I_am_Ge)
 
 
 ## License
-
 MIT License
-
 Copyright (c) [2021] [Me/@Nerajno](https://twitter.com/nerajno)  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,7 +76,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Acknowledgments
-
 Inspiration, code snippets, etc.
 * [Florin Pop's Movie App](https://youtu.be/sZ0bZGfg_m4)
 * [Florin Pop](https://twitter.com/florinpop1705)
