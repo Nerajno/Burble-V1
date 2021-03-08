@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
+import Footer from "./components/Footer";
 import {Button, Form} from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 
@@ -42,11 +43,15 @@ function App() {
     setSearchTerm(e.target.value);
   };
 
+  function refreshPage(){
+    window.location.reload(false)
+  }
+
   return (
     <>
     <header>
       <div className="navBtns">      
-      <Button variant="primary">Burble</Button>{' '}
+      <Button onClick={refreshPage} variant="primary">Burble</Button>{' '}
       <Button className="gitHubLink" variant="link" href="https://github.com/Nerajno/Burble" target="_blank"  rel="noopener noreferrer">Github</Button>{' '}
       <Form className="sortnBox">
         <Form.Check type="switch" id="custom-switch" label="Sort Movies "/>
@@ -60,6 +65,7 @@ function App() {
       {movies.length > 0 &&
         movies.map((movie) => <Movie key={movie.id} {...movie} />)}
     </div>
+    <Footer />
     </>
   );
 }

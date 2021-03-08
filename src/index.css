@@ -189,3 +189,31 @@ span {
 .tag.red{
   color: red; 
 }
+
+
+.footer {
+  margin-top: 0.8rem;
+  /* padding: 1rem; */
+  background-color: #e50914;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{ 
+  color: #388DC5;
+  font-weight: 700;
+  text-shadow: black;
+}
