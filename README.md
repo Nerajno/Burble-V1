@@ -33,11 +33,11 @@ Uses:
 - [x] Create a sticky navbar.
 - [x] Create a default width for the span tag. 
 - [x] Create a parallax scrolling effect with a static background.
-- [ ] Create a footer.
+- [x] Create a footer.
 - [x] Integrate Cypress testing.
 - [ ] Create 7  handwritten tests.
 - [ ] Make mobile compatible.
-- [ ] Create a reload action using the home.
+- [x] Create a reload action using the home/ Burble button.
 
 ### Todos ~ Level 2
 - [ ] Click on each movie image to open wikipedia article in new tab.
