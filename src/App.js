@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";
 import {Button, Form} from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
+import { useDebounce } from 'use-debounce';
+// import ReactDom from 'react-dom';
 
 
 function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); 
+  const [ debouncedSearchTerm ] = useDebounce(searchTerm, 2000);
+
+
 
   const getMovies = (API) =>{
     fetch(API)
@@ -30,6 +34,12 @@ function App() {
         setMovies(data.results);
       });
   }, []);
+
+
+  useEffect(() => {
+    // console.log("We worked", debouncedSearchTerm);
+    if(debouncedSearchTerm){getMovies(process.env.REACT_APP_SEARCH_API+ debouncedSearchTerm)}
+  }, [debouncedSearchTerm]);
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
