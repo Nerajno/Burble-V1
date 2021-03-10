@@ -1,5 +1,7 @@
 import React from 'react'; 
 
+
+
 const setVoteClass=(vote)=>{
     if(vote >=7){
         return "green"
