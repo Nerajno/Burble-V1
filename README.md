@@ -44,6 +44,7 @@ Uses:
 - [ ] Load cards ontyped in search.
 - [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
 - [ ] Create an element that opens on click or double tap for each card.
+- [ ] Resource ~ https://www.color-hex.com/color-palette/22942
  
 ## Help
 Create issues on the repo if errors are seen and they will be addressed them.
