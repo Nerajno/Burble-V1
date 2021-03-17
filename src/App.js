@@ -57,11 +57,6 @@ function App() {
     window.location.reload(false)
   }
 
-  sortByRatingDesc(){}
-  sortByRatingAsc(){}
-  sortByNameDesc(){}
-  sortByNameAsc(){}
-
   return (
     <>
     <header>
