@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";
-import { Button, Form, Dropdown } from "react-bootstrap";
+import { Button, Form, DropdownButton, Dropdown } from "react-bootstrap";
 import { useDebounce } from "use-debounce";
 
 function App() {
@@ -78,17 +78,12 @@ function App() {
               label="Sort Movies"
             />
           </Form>
-          <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Sort Movies
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-3">Sort Ascending</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Sort Descending</Dropdown.Item>
-              <Dropdown.Item href="#/action-1">Rating Ascending</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Ratings Descending</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <DropdownButton id="dropdown-item-button" title="Dropdown button">
+            <Dropdown.Item as="button">Sort Descending</Dropdown.Item>
+            <Dropdown.Item as="button">Sort Descending </Dropdown.Item>
+            <Dropdown.Item as="button">Rating Ascending</Dropdown.Item>
+            <Dropdown.Item as="button">Rating Descending</Dropdown.Item>
+          </DropdownButton>
         </div>
         <form onSubmit={handleOnSubmit}>
           <input
