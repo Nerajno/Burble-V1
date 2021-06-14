@@ -1,7 +1,7 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";
-import {Button, Form} from 'react-bootstrap';
+import {Button, Dropdown} from 'react-bootstrap';
 import { useDebounce } from 'use-debounce';
 // import ReactDom from 'react-dom';
 
@@ -57,15 +57,42 @@ function App() {
     window.location.reload(false)
   }
 
+  
+
   return (
     <>
     <header>
       <div className="navBtns">      
       <Button onClick={refreshPage} variant="primary">Burble</Button>{' '}
       <Button className="gitHubLink" variant="link" href="https://github.com/Nerajno/Burble" target="_blank"  rel="noopener noreferrer">Github</Button>{' '}
-      <Form className="sortnBox">
+      {/* <Form className="sortnBox">
         <Form.Check type="switch" id="custom-switch" label="Sort Movies "/>
-      </Form>
+      </Form> */}
+      {/* <Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+            Sort Movies
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">A - Z</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Z - A</Dropdown.Item>
+            <Dropdown.Item href="/action-3"> Ratings : 0 - 10</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Ratings : 10 - 0</Dropdown.Item>
+          </Dropdown.Menu>
+      </Dropdown> */}
+      {/* *TODO
+      Add to dropdown to this app that works
+      - http://fraserxu.github.io/react-dropdown/
+      - https://github.com/fraserxu/react-dropdown
+      - https://www.npmjs.com/package/react-css-dropdown
+      - https://www.npmjs.com/package/react-bootstrap-dropdown-menu
+
+      
+
+      
+      
+      
+       */}
+
       </div>
       <form onSubmit={handleOnSubmit}>
       <input className="search" type="search" value={searchTerm} onChange={handleOnChange} placeholder="Search...." />
