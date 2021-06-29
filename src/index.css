@@ -64,9 +64,8 @@ header {
 }
 
 .gitHubLink:hover,Button:hover {
-  color: #e50914;
-  background-color:  #fcfcfc;;
-
+  background-color: #831010;
+  color:  #fcfcfc;
 }
 
 .sortnBox{
@@ -87,7 +86,7 @@ form{
   font-weight: 600;
   border-radius: 50px;
   background-color: white;
-  color: #e50914;
+  color: 	#831010;
   padding: 0.5rem 1.5rem;
 }
 
@@ -116,7 +115,7 @@ form{
 .movie{
   width: 300px;
   margin: 1rem;
-  background-color:#e50914;
+  background-color:	#831010;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   overflow: hidden;
