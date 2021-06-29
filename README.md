@@ -42,7 +42,8 @@ Uses:
 ### Todos ~ Level 2
 - [x] Load cards ontyped in search.
 - [ ] Click on each movie image to open wikipedia article in new tab.
-- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
+- [ ] Load cards ontyped in search.
+- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending). => https://dev.to/ramonak/react-how-to-dynamically-sort-an-array-of-objects-using-the-dropdown-with-react-hooks-195p
 - [ ] Create an element that opens on click or double tap for each card.
 - [ ] Resource ~ https://www.color-hex.com/color-palette/22942
  
