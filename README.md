@@ -42,7 +42,7 @@ Uses:
 ### Todos ~ Level 2
 - [ ] Click on each movie image to open wikipedia article in new tab.
 - [ ] Load cards ontyped in search.
-- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
+- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending). => https://dev.to/ramonak/react-how-to-dynamically-sort-an-array-of-objects-using-the-dropdown-with-react-hooks-195p
 - [ ] Create an element that opens on click or double tap for each card.
  
 ## Help
