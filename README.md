@@ -28,21 +28,22 @@ Uses:
 - [x] Add data security
 - [x] Apply a new color scheme (use Netflix as a reference)
 - [x] Create a good ReadMe template.
-- [ ] Hide api~addresses/ paths
 - [x] Add back to portfolio btn or back to github btn.
 - [x] Create a sticky navbar.
 - [x] Create a default width for the span tag. 
 - [x] Create a parallax scrolling effect with a static background.
 - [x] Create a footer.
 - [x] Integrate Cypress testing.
-- [ ] Create 7  handwritten tests.
-- [ ] Make mobile compatible.
 - [x] Create a reload action using the home/ Burble button.
+- [ ] Create 7  handwritten tests.
+- [ ] Hide api~addresses/ paths
+- [ ] Make mobile compatible.
 
 ### Todos ~ Level 2
+- [x] Load cards ontyped in search.
 - [ ] Click on each movie image to open wikipedia article in new tab.
 - [ ] Load cards ontyped in search.
-- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
+- [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending). => https://dev.to/ramonak/react-how-to-dynamically-sort-an-array-of-objects-using-the-dropdown-with-react-hooks-195p
 - [ ] Create an element that opens on click or double tap for each card.
 - [ ] Resource ~ https://www.color-hex.com/color-palette/22942
  
