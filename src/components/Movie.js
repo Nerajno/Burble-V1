@@ -1,7 +1,5 @@
 import React from 'react'; 
 
-
-
 const setVoteClass=(vote)=>{
     if(vote >=7){
         return "green"
@@ -12,7 +10,8 @@ const setVoteClass=(vote)=>{
     }
 }
 
-const Movie = ({title, poster_path, overview, vote_average}) => (
+const Movie = ({title, poster_path, overview, vote_average}) => ( 
+
     <div className="movie">
         {/* TODO: Add wikipedia search link here, open in newtab. */}
         <img src={poster_path ? process.env.REACT_APP_IMG_API+poster_path : "https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"} alt={title} />
