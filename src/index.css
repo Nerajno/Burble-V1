@@ -6,11 +6,16 @@
 }
 
 body {
-  background-color: #22254b;
   color: antiquewhite;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  
+  background-image: url("https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .root {
   flex-direction: column;
@@ -21,13 +26,57 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: -1;
 }
 
 header {
   background-color:#e50914;;
-  padding: 1rem;
-  justify-content: flex-end;
+  padding: 0.7em;
+  justify-content: space-between;
   display: flex;
+  position: sticky;
+  top: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: auto;
+}
+
+.navBtns{
+  justify-content: flex-start;
+  display: flex;
+  font-size: 1.2rem;
+  align-content: center;
+}
+
+.gitHubLink, Button{
+  background-color:#e50914;
+  color: rgb(252, 252, 252);
+  padding: 0.4rem;
+  margin: 0.3em;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 2px 2px 5px rgba(3, 0, 0, 0.7);
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.1s linear;
+  text-decoration: none;
+}
+
+.gitHubLink:hover,Button:hover {
+  background-color: #831010;
+  color:  #fcfcfc;
+}
+
+.sortnBox{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+form{
+  justify-content: flex-end;
 }
 
 .search {
@@ -37,7 +86,7 @@ header {
   font-weight: 600;
   border-radius: 50px;
   background-color: white;
-  color: #e50914;
+  color: 	#831010;
   padding: 0.5rem 1.5rem;
 }
 
@@ -66,7 +115,7 @@ header {
 .movie{
   width: 300px;
   margin: 1rem;
-  background-color: blueviolet;
+  background-color:	#831010;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   overflow: hidden;
@@ -90,8 +139,8 @@ header {
   margin: 0; 
 }
 
-.movie-over {
-  background-color: antiquewhite;
+.movie-overview {
+  background-color: #c50a13d8;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -99,7 +148,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  color: blueviolet;
+  color:white;
   padding: 1rem;
   overflow: auto;
   max-height: 100%;
@@ -107,15 +156,25 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-.movie:hover .movie-over {
-  transform: translateY(0%);
+.movie:hover .movie-overview {
+  /* transform: translateY(0%); */
+  color: aquamarine;
+}
+
+span {
+  background-color: aqua;
 }
 
 .tag{
-  background-color: rgb(194, 108, 216);
+  background-color: rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 5px;
   font-weight: bold;
+  height: auto;
+}
+
+.tag.innerHTML{
+  margin:auto;
 }
 
 .tag.green{
@@ -128,4 +187,32 @@ header {
 
 .tag.red{
   color: red; 
+}
+
+
+.footer {
+  margin-top: 0.8rem;
+  /* padding: 1rem; */
+  background-color: #e50914;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{ 
+  color: #388DC5;
+  font-weight: 700;
+  text-shadow: black;
 }
