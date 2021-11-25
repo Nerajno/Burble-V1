@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 // import ReactDom from 'react-dom';
 import { Button, Form, DropdownButton, Dropdown } from "react-bootstrap";
 import { useDebounce } from "use-debounce";
@@ -98,6 +99,7 @@ function App() {
           />
         </form>
       </header>
+      <Header />
       <div className="movie-container">
         {movies.length > 0 &&
           movies.map((movie) => <Movie key={movie.id} {...movie} />)}

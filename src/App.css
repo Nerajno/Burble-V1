@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.movie:hover .movie-over{
+  transform: translateY(0%);
+  color: purple;
+}
