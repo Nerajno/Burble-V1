@@ -16,3 +16,12 @@
 - [ ] Load images ontyped in search
 - [ ] Create a sort movies bar loaded by year, ratings, alphabetically.
 - [ ] Add centered released date info to each card. 
+- [ ] Create the options to save movies to favorites.
+- [ ] Create the options to delete movies from favorites. 
+
+### Todos ~ Level 3 
+- [ ] Create the   options to add comments to each movie saved to favorites that keeps date and time.
+
+### Notes ~ Resources
+
+api.themoviedb.org
