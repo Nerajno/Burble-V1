@@ -8,7 +8,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState(""); 
 
   const getMovies = (API) =>{
-    fetch(API)
+    fetch(process.env.API)
     .then((res) => res.json())
     .then((data) => {
       // console.log(data);
