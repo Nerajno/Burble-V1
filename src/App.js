@@ -11,8 +11,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm] = useDebounce(searchTerm, 2000);
 
-  const getMovies = (API) => {
-    fetch(API)
+  const getMovies = (process.env.REACT_APP_FEATURED_API) => {
+    fetch(process.env.REACT_APP_FEATURED_API)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
