@@ -81,3 +81,8 @@ SOFTWARE.
 Inspiration, code snippets, etc.
 * [Florin Pop's Movie App](https://youtu.be/sZ0bZGfg_m4)
 * [Florin Pop](https://twitter.com/florinpop1705)
+
+
+## Resources
+https://youtu.be/sZ0bZGfg_m4
+https://youtu.be/1eO_hNYzaSc
