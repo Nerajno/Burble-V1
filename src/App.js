@@ -9,6 +9,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [debouncedSearchTerm] = useDebounce(searchTerm, 2000);
 
+  console.log(process.env);
+
   const getMovies = (API) => {
     fetch(API)
       .then((res) => res.json())
