@@ -4,6 +4,7 @@ A React-Based Simple Movie Search WebApp
 ## Description
 A React movie app built following [Florin Pop's React Movie app](https://youtu.be/sZ0bZGfg_m4).
 It uses reactBootstrap for buttons and forms, use theMovieDb api for movie info and search functionalities.
+- Reference - https://www.youtube.com/watch?v=1eO_hNYzaSc&ab_channel=MattTheDev
 
 Improvements include :
 - Link to Github repo.
@@ -13,6 +14,9 @@ Improvements include :
 - Home button (Burble) ~ having app reload functionality.
 - Themed using NetFlix's theme.
 - Themed footer.
+- log in 
+- crud app 
+- Uses mongo to save state or users choices. 
 
 
 ## Screenshot
@@ -28,16 +32,17 @@ Uses:
 - [x] Add data security
 - [x] Apply a new color scheme (use Netflix as a reference)
 - [x] Create a good ReadMe template.
-- [ ] Hide api~addresses/ paths
 - [x] Add back to portfolio btn or back to github btn.
 - [x] Create a sticky navbar.
 - [x] Create a default width for the span tag. 
 - [x] Create a parallax scrolling effect with a static background.
 - [x] Create a footer.
 - [x] Integrate Cypress testing.
+- [x] Create a reload action using the home/ Burble button.
 - [ ] Create 7  handwritten tests.
 - [ ] Make mobile compatible.
-- [x] Create a reload action using the home/ Burble button.
+- [ ] Hide api~addresses/ paths
+
 
 ### Todos ~ Level 2
 - [ ] Click on each movie image to open wikipedia article in new tab.
