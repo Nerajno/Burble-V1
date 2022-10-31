@@ -5,6 +5,7 @@ A React-Based Simple Movie Search WebApp
 A React movie app built following [Florin Pop's React Movie app](https://youtu.be/sZ0bZGfg_m4).
 It uses reactBootstrap for buttons and forms, use theMovieDb api for movie info and search functionalities.
 - Reference - https://www.youtube.com/watch?v=1eO_hNYzaSc&ab_channel=MattTheDev
+- Reference - https://youtu.be/ntYXj9W1Ez8
 
 Improvements include :
 - Link to Github repo.
