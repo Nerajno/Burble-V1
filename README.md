@@ -1,5 +1,5 @@
 # Burble ~ Ongoing
-A React-Based Simple Movie Search WebApp
+A React-Based  Movie Search WebApp
 
 ## Description
 A React movie app built following [Florin Pop's React Movie app](https://youtu.be/sZ0bZGfg_m4).
@@ -7,57 +7,54 @@ It uses reactBootstrap for buttons and forms, use theMovieDb api for movie info 
 - Reference - https://www.youtube.com/watch?v=1eO_hNYzaSc&ab_channel=MattTheDev
 - Reference - https://youtu.be/ntYXj9W1Ez8
 
-Improvements include :
+Improvements should include :
 - Link to Github repo.
 - Sticky navbar.
 - A sort movies feature.
-- Filtered Results (it displays results as you type).
+- filtered Results (it displays results as you type).
 - Home button (Burble) ~ having app reload functionality.
 - Themed using NetFlix's theme.
 - Themed footer.
-- log in 
-- crud app 
-- Uses mongo to save state or users choices. 
+
+- Login/Sign up (MyBurble)
+- Crud app version(MyBurble)
+- Uses mongodb to save state or users choices.(MyBurble)
 
 
 ## Screenshot
-![Burble Screenshot](https://github.com/Nerajno/Burble/blob/main/src/assets/Burble_Screenshot.png)
 
-### Dependencies
+
+### Dependencies/Resources
 Uses:
 - [React](https://reactjs.org/) ~ Framework
-- [TMDB api](https://www.themoviedb.org/documentation/api?language=en-US) ~ API
-- [React Bootstrap](https://react-bootstrap.github.io/) ~ Styling
+- [Google font](https://fonts.google.com/)
+- [Boxicons](https://boxicons.com/)
+- [Images](https://unsplash.com/)
+- [API](https://www.themoviedb.org/)
 
 ### Todos ~ Basic
-- [x] Add data security
-- [x] Apply a new color scheme (use Netflix as a reference)
-- [x] Create a good ReadMe template.
-- [x] Add back to portfolio btn or back to github btn.
-- [x] Create a sticky navbar.
-- [x] Create a default width for the span tag. 
-- [x] Create a parallax scrolling effect with a static background.
-- [x] Create a footer.
-- [x] Integrate Cypress testing.
-- [x] Create a reload action using the home/ Burble button.
+- [ ] Add data security
+- [ ] Apply a new color scheme (use Netflix as a reference)
+- [ ] Create a good ReadMe template.
+- [ ] Add back to portfolio btn or back to github btn.
+- [ ] Create a sticky navbar.
+- [ ] Create a default width for the span tag. 
+- [ ] Create a footer.
+- [ ] Integrate Cypress testing.
+- [ ] Create a reload action using the home/ Burble button.
 - [ ] Create 7  handwritten tests.
 - [ ] Make mobile compatible.
 - [ ] Hide api~addresses/ paths
 
-
 ### Todos ~ Level 2
-- [ ] Click on each movie image to open wikipedia article in new tab.
 - [ ] Load cards ontyped in search.
 - [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
-- [ ] Create an element that opens on click or double tap for each card.
  
 ## Help
 Create issues on the repo if errors are seen and they will be addressed them.
 
 ## Authors
 [Me/@Nerajno](https://twitter.com/nerajno)  
-[@Gerdeth](https://twitter.com/_I_am_Ge)
-
 
 ## License
 MIT License
