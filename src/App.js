@@ -1,3 +1,4 @@
+import 'sw'
 import './App.scss';
 
 function App() {
