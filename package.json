@@ -23,10 +23,11 @@
     "swiper": "^6.8.4",
     "use-debounce": "^6.0.1",
     "vite": "^2.0.5",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.44.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": " PORT=2000 react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^6.6.0"
+    "cypress": "^6.6.0",
+    "reload": "^3.2.0"
   }
 }

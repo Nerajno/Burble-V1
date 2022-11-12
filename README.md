@@ -45,12 +45,13 @@ Uses:
 - [ ] Create 7  handwritten tests.
 - [ ] Make mobile compatible.
 - [ ] Hide api~addresses/ paths
-
+- [ ] Filter by genre, year, rating
+- [ ] Implement pagination
 ### Todos ~ Level 2
 - [ ] Load cards ontyped in search.
 - [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
  
-## Help
+## Help/Suggestions
 Create issues on the repo if errors are seen and they will be addressed them.
 
 ## Authors
