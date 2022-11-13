@@ -86,4 +86,4 @@ Inspiration, code snippets, etc.
 
 
 ### Current Location in Guide
-https://youtu.be/ntYXj9W1Ez8?t=1681
+https://youtu.be/ntYXj9W1Ez8?t=3408
