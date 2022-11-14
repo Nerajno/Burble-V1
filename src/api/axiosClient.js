@@ -1,7 +1,8 @@
 import axios from 'axios';
-import queryString from 'queryString';
+import queryString from 'query-string';
 
 import apiConfig from './apiConfig';
+
 const axiosClient = axios.create({
     baseURL: apiConfig.baseUrl, 
     headers: {
@@ -13,6 +14,7 @@ const axiosClient = axios.create({
 axiosClient.interceptors.request.use(async (config) => config);
 
 axiosClient.interceptors.response.use((response) => {
+    // console.log(response);
     if (response && response.data) {
         return response.data;
     }

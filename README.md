@@ -47,6 +47,7 @@ Uses:
 - [ ] Hide api~addresses/ paths
 - [ ] Filter by genre, year, rating
 - [ ] Implement pagination
+- [ ] Create a code style// implement a linter.
 ### Todos ~ Level 2
 - [ ] Load cards ontyped in search.
 - [ ] Create a sort movies bar loaded by ratings, alphabetically (ascending, descending).
