@@ -23,4 +23,6 @@ axiosClient.interceptors.response.use((response) => {
     throw error;
 });
 
+console.log(axiosClient.params);
+
 export default axiosClient;
