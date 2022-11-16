@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HeroSlide from './components/hero_slide/HeroSlide';
+import HeroSlide from '../hero_slide/HeroSlide';
 
 const Home = () => {
     return (
