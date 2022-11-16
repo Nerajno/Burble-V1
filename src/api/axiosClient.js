@@ -7,9 +7,11 @@ const axiosClient = axios.create({
     headers: {
         'Content-Type': 'application/json'
     },
-    paramsSerializer: params => queryString.stringify({...params, api_key: apiConfig.apiKey}),
-    // console.log(paramsSerializer);
-});
+    // paramsSerializer: params => queryString.stringify({...params, api_key: apiConfig.apiKey}), // TODO: Create this as an issue in the project repo
+    paramsSerializer: {
+        serialize: params => queryString.stringify({...params, api_key: apiConfig.apiKey}),
+    },
+})
 
 axiosClient.interceptors.request.use(async (config) => config);
 
@@ -22,7 +24,5 @@ axiosClient.interceptors.response.use((response) => {
 }, (error) => {
     throw error;
 });
-
-console.log(axiosClient.params);
 
 export default axiosClient;
