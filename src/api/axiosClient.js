@@ -16,7 +16,7 @@ const axiosClient = axios.create({
 axiosClient.interceptors.request.use(async (config) => config);
 
 axiosClient.interceptors.response.use((response) => {
-    console.log(response, 'in axiosClient');
+    // console.log(response, 'in axiosClient');
     if (response && response.data) {
         return response.data;
     }
