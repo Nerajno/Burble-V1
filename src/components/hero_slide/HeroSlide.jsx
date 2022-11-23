@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 
 import SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Button, {OutlineButton } from '../button/Button';
 
-import tmdbApi, { category, movieType } from '../../api/tmdbApi.js';
-import apiConfig from '../../api/apiConfig.js';
+import tmdbApi, { category, movieType } from '../../api/tmdbApi';
+import apiConfig from '../../api/apiConfig';
 
 import './hero-slide.scss';
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router';
 
 const HeroSlide = () => {
   SwiperCore.use([Autoplay]);
@@ -19,13 +19,11 @@ const HeroSlide = () => {
     const getMovies = async () => {
       const params = { page: 1 };
       try {
-        const response = await tmdbApi.getMoviesList(movieType.popular, {
-          params,
-        });
-        setMovieItems(response.results.slice(0, 4)); // gets the first 4 movies and is response.results.slice( 1,3) in the tutorial
+        const response = await tmdbApi.getMoviesList(movieType.popular, {params});
+        setMovieItems(response.results.slice(1, 4)); // gets the first 4 movies and is response.results.slice( 1,3) in the tutorial
         console.log(response);
       } catch (error) {
-        console.log(error); // changed from 'error'
+        console.log(error); // changed from 'error', this gives us
       }
     };
     getMovies();
@@ -65,14 +63,14 @@ const HeroSlideItem = (props) => {
 
   return (
     <div
-      className={`hero-slide_item ${props.className}`}
+      className={`hero-slide__item ${props.className}`}
       style={{backgroundImage: `url(${background})`}}
     >
       <div className='hero-slide__item__content container'>
         <div className='hero-slide__item__content_info'>
           <h2 className='title'>{item.title}</h2>
-          <div className="overview">{item.overview}</div>
-          <div className="btn">
+          <div className='overview'>{item.overview}</div>
+          <div className='btns'>
                 <Button onClick={() => history.push('/movie/' + item.id)}>
                     Watch Now
                 </Button>
@@ -81,8 +79,8 @@ const HeroSlideItem = (props) => {
                 </OutlineButton>
           </div>
         </div>
-        <div className="hero-slide__item__content_poster">
-
+        <div className='hero-slide__item__content__poster'>
+              <img src={apiConfig.wq500Image(item.poster_path)} alt="" />
         </div>
       </div>
     </div>

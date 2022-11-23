@@ -6,7 +6,7 @@ const apiConfig ={
     wq500Image: (imgPath) => `https://image.tmdb.org/t/p/w500/${imgPath}`,
 }
 
- console.log(apiConfig.originalImage);
+//  console.log(apiConfig.originalImage);
 
 // console.log("https://api.themoviedb.org/3/movie/550?api_key=d5199020aac77d6859c71466db7228e1");
 

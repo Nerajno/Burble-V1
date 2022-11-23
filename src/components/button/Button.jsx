@@ -1,5 +1,7 @@
 import React from 'react';
-import ProTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
+import './button.scss';
 
 const Button = props => {
     return (
@@ -7,9 +9,9 @@ const Button = props => {
         className={`btn ${props.className}`}
         onClick={props.onClick ? () => props.onClick() : null}
         >
-            {ProTypes.children}
+            {props.children}
         </button>
-    )
+    );
 }
 
 export const OutlineButton = props => {
@@ -23,9 +25,8 @@ export const OutlineButton = props => {
     )
 }
 
-
 Button.propTypes = {
-    onClick: ProTypes.func
+    onClick: PropTypes.func
 }
 
 export default Button;

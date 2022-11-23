@@ -1,11 +1,11 @@
-@use "../../scss/" as *;
+@use "../../scss/"as *;
 
 .logo {
     font-size: 2.5rem;
     font-weight: 600;
 
     @include flex(center, unset);
-    
+
     img {
         margin-right: 10px;
         width: 50px;
@@ -18,13 +18,13 @@
 }
 
 .header {
-    height: $header-height; 
+    height: $header-height;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
-    transition: height .3s ease, background-color .3s ease;
+    transition: height 0.3s ease, background-color 0.3s ease;
 
     &.shrink {
         height: $header-shrink-height;
@@ -44,7 +44,7 @@
     &__nav {
         @include flex(center, unset);
 
-        & > * ~ * { 
+        &>*~* {
             margin-left: 2rem;
         }
 
@@ -55,25 +55,25 @@
             font-size: 1.5rem;
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 0; 
+                width: 0;
                 transition: width 0.5s ease;
                 height: 2px;
                 background-color: $main-color;
             }
-    
+
             &.active::after,
-            &:hover::after{
+            &:hover::after {
                 width: 100%;
             }
         }
 
         @include mobile {
-            position:fixed;
+            position: fixed;
             bottom: 0;
             left: 0;
             height: 5rem;
@@ -82,12 +82,12 @@
             padding: 0 2rem;
             box-shadow: $box-shadow;
 
-            @include flex( center, space-between);
+            @include flex(center, space-between);
 
-            & > * ~ * { 
-                margin-left:  0 2rem;
+            &>*~* {
+                margin-left: 0;
             }
 
-            }
+        }
     }
 }

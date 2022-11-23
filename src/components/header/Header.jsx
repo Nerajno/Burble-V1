@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/tmovie.png';
-import { cleanup } from '@testing-library/react';
+
 
 const headerNav = [
     { 
@@ -37,7 +37,7 @@ const Header = () =>{
         return () => {
             window.removeEventListener('scroll', shrinkHeader);
         };
-    }, [])
+    }, []);
 
     return (
         <div ref={headerRef} className="header">
@@ -59,7 +59,6 @@ const Header = () =>{
                 }
             </ul>
         </div>
-            Header this
         </div>
     );
 }
