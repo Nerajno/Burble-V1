@@ -3,6 +3,7 @@ import PropTypes  from 'prop-types';
 
 import './movie-list.scss';
 
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 
