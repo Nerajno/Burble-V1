@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes  from 'prop-types';
 
 import './movie-list.scss';
-
+import MovieCard from '../movie-card/MovieCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
@@ -42,12 +42,12 @@ const MovieList = props => {
                 grabCursor={true}
                 spaceBetween={10}
                 slidesPerView={'auto'}
-                onSwiper={(swiper) => console.log(swiper)}
+                onSwiper={(swiper) => console.log(swiper)} //TODO: Review
             >
                 {
                     items.map((item, i) => (
                         <SwiperSlide key={i}>
-                            <img src={apiConfig.w500Image(item.poster_path)} alt='' />
+                            <MovieCard item={item} category={props.category}/>
                         </SwiperSlide>
                     ))
                 }
