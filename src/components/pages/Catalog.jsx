@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import PageHeader from '../page-header/PageHeader';
-import { catergory as cate } from '../api/tmdbApi';
+import {category  as cate} from '../../api/tmdbApi' 
 
 const Catalog = () => {
     const {category}  = useParams();
@@ -9,7 +9,7 @@ const Catalog = () => {
     return (
         <>
         <PageHeader>
-            {category == cate.movie ? 'Movies' : 'TV Series'  }
+            {category === cate.movie ? 'Movies' : 'TV Series' }
         </PageHeader>
         </>
     );
