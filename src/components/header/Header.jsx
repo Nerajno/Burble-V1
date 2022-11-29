@@ -10,7 +10,7 @@ const headerNav = [
         path: '/'
     },
     {
-        display: 'About',
+        display: 'Movies',
         path: '/movie'
     }, 
     {
