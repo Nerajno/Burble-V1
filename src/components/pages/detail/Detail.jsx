@@ -4,7 +4,11 @@ import { useParams } from 'react-router';
 import tmdbApi from '../../../api/tmdbApi';
 import apiConfig from '../../../api/apiConfig';
 
+import CastList from './CastList';
+
 import "../detail/detail.scss";
+import VideoList from './VideoList';
+
 
 const Detail = () => {
 
@@ -50,10 +54,15 @@ const Detail = () => {
                         <div className="section__header">
                             <h2>Casts</h2>
                         </div>
-                        
+                        <CastList id={item.id}/>
                     </div>
                 </div>
-                </div>     
+                </div>  
+                <div className="container">
+                    <div className="section mn-3">
+                          <VideoList id={item.id}/>
+                     </div>
+                </div>   
                 </>
             )
            } 
