@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './movie-grid.scss';
 import MovieCard from '../movie-card/MovieCard';
 import { useParams, useHistory } from 'react-router-dom';
-import Switch from 'react-bootstrap/esm/Switch';
 import { OutlineButton } from '../button/Button';
 import Input from '../input/input';
 
@@ -75,7 +74,7 @@ const MovieGrid = props => {
         {
             page < totalPage ? (
                 <div className="movie-grid__loadmore">
-                    <OutlineButton className="small" onClick={loadMore}> Load More</OutlineButton>
+                    <OutlineButton className="small" onClick={loadMore}>Load More</OutlineButton>
                 </div>
             ):null
         }

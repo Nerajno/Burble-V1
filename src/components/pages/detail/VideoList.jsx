@@ -11,7 +11,8 @@ const VideoList = props => {
         useEffect(() => {
             const getCredits = async () =>{
                 const res = await tmdbApi.getVideos(category, props.id);
-                setVideos(res.response.slice(0, 5));
+                console.log(res.results, res);
+                setVideos(res.results.slice(0, 5));
             }
             getCredits();
         }, [category, props.id]);
