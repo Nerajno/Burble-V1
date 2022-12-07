@@ -24,3 +24,5 @@ yarn-error.log*
 
 # API keys
 .env
+.env.test
+
