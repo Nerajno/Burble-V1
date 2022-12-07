@@ -34,7 +34,7 @@ Uses:
 - [API](https://www.themoviedb.org/)
 
 ### Todos ~ Basic
-- [ ] Improve data security ( hide Api keys v1)
+- [x] Improve data security ( hide Api keys v1)
 - [ ] Apply a new color scheme (use Netflix as a reference).
 - [ ] Add a light and dark mode.
 - [ ] Add back to portfolio btn or back to github btn.
