@@ -34,6 +34,15 @@ body {
   }
 }
 
+.dark{
+  background-color: $body-bg-dark;
+  color: $txt-color-dark;
+
+}
+
+
+
+
 a {
   text-decoration: none;
   color: unset;
@@ -81,3 +90,4 @@ iframe{
 .section__header{
   @include flex(center, space-between);
 }
+
