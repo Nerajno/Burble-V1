@@ -16,6 +16,5 @@ const ToggleBtn = ({label, toggled, onClick}) => {
        </label>
    )
 }
-
 export default ToggleBtn; 
 
