@@ -10,7 +10,6 @@ import tmdbApi, {category} from '../../api/tmdbApi';
  
 const MovieList = props => {
     const [items, setItems] = useState([]);
-    console.log(process.env);
     useEffect(() => {
         const getList = async () => {
             let response = null; 
