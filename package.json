@@ -60,7 +60,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^6.6.0",
+    "cypress": "^10.4.0",
     "node-sass": "^8.0.0",
     "reload": "^3.2.0"
   }
