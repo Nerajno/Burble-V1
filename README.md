@@ -88,7 +88,7 @@ String interpolation
 
 ## Still Researching
 Dark Mode Implementation => 
-https://youtu.be/ys4YZr43BdY
+<!-- https://youtu.be/ys4YZr43BdY
 https://gist.github.com/JL978
 https://codesandbox.io/s/admiring-shirley-kdewh?from-embed=&file=/src/components/ThemeSetter.js
-https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616
+https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616 -->
