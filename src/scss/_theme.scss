@@ -1,4 +1,5 @@
-@use "./scss/" as *;
+// @use "./scss/" as *;
+@forward "./scss/_partials.scss";
 
 $themes: (
     dark: (
