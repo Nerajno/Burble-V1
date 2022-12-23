@@ -1,15 +1,16 @@
 # Burble ~ V1 (COMPLETED )
 A React-Based Movie Search webapp. 
-[Burble](https://theburble.netlify.app/)
+
+
 ## Description
-Responsive React Based App using the TMDB api. It was used to
-retool or understand React better. It use theMovieDb api for movie info and search 
-functionalities.
+Responsive Movie app using React, the TMDB api and Sass. It was used to
+retool or get a better understanding of React, theMovieDb api for movie info and search 
+functionalities and Sass for styling. 
 
 - Reference - https://youtu.be/ntYXj9W1Ez8
 
 
-Improvements should include :
+Improvements to be included :
 - Fix branding to Burble. 
 - Link to Github repo in the footer.
 - Sticky navbar.
@@ -18,9 +19,10 @@ Improvements should include :
 - Themed using NetFlix's theme.
 - Themed footer.
 - Fix slider
-- Login/Sign up (MyBurble)
-- Implement CRUD app version (MyBurble)
-- Uses mongodb to save state or users choices.(MyBurble)
+
+- Login/Sign up (MyBurble/stretchGoal0)
+- Implement CRUD app version (MyBurble/stretchGoal1)
+- Uses mongodb to save users choices.(MyBurble/stretchGoal3)
 
 ## Screenshot
 
@@ -42,8 +44,8 @@ Uses:
 - [ ] Integrate Cypress testing.
 - [ ] Create 7  handwritten tests.
 - [ ] Hide api~addresses/ paths
-- [ ] Filter by genre, year, rating
-- [ ] Implement pagination
+- [ ] Filter by genre, year, rating.
+- [ ] Implement pagination for each category or page or search params. 
 - [ ] Create a code style// implement a linter.
 
  
