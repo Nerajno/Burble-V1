@@ -1,11 +1,8 @@
 // @use "scss/**/*" as * ; 
-@use "./scss/partials";
+@use "../src/scss/_partials";
 
-<<<<<<< HEAD
-@use "../src/scss/theme";
-=======
-@import "../src/scss/theme"
->>>>>>> parent of 28fcd7b (Working on dark mode -still)
+@use "../src/scss/_theme";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
