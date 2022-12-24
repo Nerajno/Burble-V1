@@ -1,7 +1,8 @@
-// @use "scss/**/*" as * ; 
-@use "../src/scss/_partials";
+@use "./scss/" as * ; 
+// @use "./scss/partials";
+@forward "./src/scss/variables.scss";
+@forward "./src/scss/theme.scss";
 
-@use "../src/scss/_theme.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
