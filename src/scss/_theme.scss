@@ -1,5 +1,5 @@
 // @use "./scss/" as *;
-@use "./_variables";
+@import "./_variables.scss";
 
 $themes: (
     dark: (
@@ -27,7 +27,9 @@ $themes: (
     }
   }
   
-  @function t($key) {
+  @function themed($key) {
     @return map-get($theme-map, $key);
   }
+
+  
   

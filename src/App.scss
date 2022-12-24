@@ -1,7 +1,7 @@
 @use "./scss/" as * ; 
 // @use "./scss/partials";
-@forward "./src/scss/variables.scss";
-@forward "./src/scss/theme.scss";
+@use "./src/scss/variables.scss";
+@use "./src/scss/theme.scss";
 
 
 
@@ -49,10 +49,11 @@ body {
 //   color: $txt-color;
 // }
 
-@include themed() {
-  color: t('text');
-  background: t('bg');
-}
+
+// @include themed() {
+//   color: t('text');
+//   background: t('bg');
+// }
 
 
 
