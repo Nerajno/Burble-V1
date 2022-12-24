@@ -80,3 +80,8 @@ Inspiration, code snippets, etc.
 * [Florin Pop's Movie App](https://youtu.be/sZ0bZGfg_m4)
 * [Florin Pop](https://twitter.com/florinpop1705)
 * [Responsive React Movies App With API | ReactJS Movies | ReactJS Tutorial](https://youtu.be/ntYXj9W1Ez8)
+
+## Stuff Learnt
+- string interpolation
+- new-er Sass methods (@use && @forward)
+- pathing structure
