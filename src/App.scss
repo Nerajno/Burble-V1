@@ -50,10 +50,10 @@ body {
 // }
 
 
-// @include themed() {
-//   color: t('text');
-//   background: t('bg');
-// }
+@include themed() {
+  color: t('text');
+  background: t('bg');
+}
 
 
 
