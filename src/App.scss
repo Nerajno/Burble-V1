@@ -1,9 +1,7 @@
-@use "./scss/" as * ; 
+@use "./scss/" as * ;
+@forward "./src/scss/_theme.scss";
 // @use "./scss/partials";
 @use "./src/scss/variables.scss";
-@use "./src/scss/theme.scss";
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
@@ -31,8 +29,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
 
-  background-color: $body-bg;
-  color: $txt-color;
+  // background-color: $body-bg;
+  // color: $txt-color;
+
+  //TODO: Figure this out
+  // @include themed(){
+  //   background: t('background-color');
+  //   color: t('color');
+  // }
 
   @include mobile {
     margin-bottom: 3rem;
@@ -48,14 +52,6 @@ body {
 //   background-color: $body-bg;
 //   color: $txt-color;
 // }
-
-
-@include themed() {
-  color: t('text');
-  background: t('bg');
-}
-
-
 
 a {
   text-decoration: none;

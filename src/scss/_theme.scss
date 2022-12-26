@@ -27,7 +27,7 @@ $themes: (
     }
   }
   
-  @function themed($key) {
+  @function t($key) {
     @return map-get($theme-map, $key);
   }
 

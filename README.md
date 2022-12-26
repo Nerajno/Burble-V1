@@ -87,10 +87,19 @@ Inspiration, code snippets, etc.
 ## Stuff I learnt
 Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
 String interpolation
+Implementation of Sass in a react env {
+}
+<!-- - Implementation of Dark mode => { 
+    https://codesandbox.io/s/admiring-shirley-kdewh?from-embed=&file=/src/components/ThemeSetter.js
+https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616 
+https://javascript.plainenglish.io/5-steps-to-implement-maintainable-and-scalable-sass-theming-in-complex-projects-76bb6da0a8e6
+} -->
 
 ## Still Researching
 Dark Mode Implementation => 
 <!-- https://youtu.be/ys4YZr43BdY
 https://gist.github.com/JL978
 https://codesandbox.io/s/admiring-shirley-kdewh?from-embed=&file=/src/components/ThemeSetter.js
-https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616 -->
+https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616 
+https://javascript.plainenglish.io/5-steps-to-implement-maintainable-and-scalable-sass-theming-in-complex-projects-76bb6da0a8e6
+-->
