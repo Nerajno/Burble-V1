@@ -1,8 +1,9 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/BurbleLogo.png';
 import ToggleBtn from '../../components/toggle/ToggleBtn';
+import ThemeSetter from '../../context/ThemeSetter';
 
 
 const headerNav = [
@@ -67,6 +68,7 @@ const Header = () =>{
                 toggled={true}
                 onClick={logState}
             /> 
+            <ThemeSetter />
             </ul>
         </div>
         </div>
