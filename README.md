@@ -102,4 +102,9 @@ https://gist.github.com/JL978
 https://codesandbox.io/s/admiring-shirley-kdewh?from-embed=&file=/src/components/ThemeSetter.js
 https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616 
 https://javascript.plainenglish.io/5-steps-to-implement-maintainable-and-scalable-sass-theming-in-complex-projects-76bb6da0a8e6
+
+Need to Review
+https://darkmodejs.learn.uno/
+https://www.npmjs.com/package/dark-mode-light-mode
+
 -->
