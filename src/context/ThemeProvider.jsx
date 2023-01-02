@@ -20,9 +20,9 @@ const ThemeProvider = ({ children }) => {
 
     return(
         <ThemeContext.Provider value={{ theme, setTheme }}>
-            <div className={`theme==${theme}`}>{children}</div>
+            <div className={`theme--${theme}`}>{children}</div>
         </ThemeContext.Provider>
     );
 };
 
-export default ThemeProvider
+export default ThemeProvider;

@@ -27,9 +27,9 @@ const Header = () =>{
     const {pathname} =  useLocation();
     const headerRef = useRef(null);
 
-    const logState = state => {
-        console.log("Toggled:", state)
-    }
+    // const logState = state => {
+    //     console.log("Toggled:", state)
+    // }
 
     const active  = headerNav.findIndex( e => e.path === pathname);
 
