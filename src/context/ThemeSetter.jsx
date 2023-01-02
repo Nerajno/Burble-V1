@@ -5,7 +5,7 @@ import ThemeContext from './ThemeContext';
 const ThemeSetter = ()=> {
     const { theme, setTheme } = useContext(ThemeContext);
 
-   
+    console.log(theme);
 
     return (
       <select value={theme} onChange={(e) => setTheme(e.currentTarget.value)}>

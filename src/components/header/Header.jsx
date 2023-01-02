@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/BurbleLogo.png';
 
-import DarkModeToggle from "react-dark-mode-toggle";
-import ToggleBtn from '../../components/toggle/ToggleBtn';
+// import DarkModeToggle from "react-dark-mode-toggle";
+// import ToggleBtn from '../../components/toggle/ToggleBtn';
 import ThemeSetter from '../../context/ThemeSetter';
 
 
@@ -33,7 +33,9 @@ const Header = () =>{
 
     const active  = headerNav.findIndex( e => e.path === pathname);
 
-    const [isDarkMode, setIsDarkMode] = useState(() => false);
+    // const [isDarkMode, setIsDarkMode] = useState(() => false);
+
+    console.log(typeof ThemeSetter);
 
     useEffect(()=>{
         const shrinkHeader = () => {
@@ -72,12 +74,12 @@ const Header = () =>{
                 toggled={true}
                 onClick={logState}
             />  */}
-            {/* <ThemeSetter /> */}
-            <DarkModeToggle
+             <ThemeSetter />
+            {/* <DarkModeToggle
                 onChange={ThemeSetter}
                 checked={isDarkMode}
                 size={80}
-    />
+    /> */}
             </ul>
         </div>
         </div>
