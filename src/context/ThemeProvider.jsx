@@ -25,4 +25,4 @@ const ThemeProvider = ({ children }) => {
     );
 };
 
-export default ThemeProvider;
+export default ThemeProvider

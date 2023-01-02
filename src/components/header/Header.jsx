@@ -67,14 +67,14 @@ const Header = () =>{
                         </li>
                     ))
                 }
-            <ToggleBtn 
+            {/* <ToggleBtn 
                 label=""
                 toggled={true}
                 onClick={logState}
-            /> 
-            <ThemeSetter />
+            />  */}
+            {/* <ThemeSetter /> */}
             <DarkModeToggle
-                onChange={setIsDarkMode}
+                onChange={ThemeSetter}
                 checked={isDarkMode}
                 size={80}
     />
