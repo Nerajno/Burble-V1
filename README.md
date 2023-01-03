@@ -1,15 +1,16 @@
 # Burble ~ V1 (COMPLETED )
 A React-Based Movie Search webapp. 
-[Burble](https://theburble.netlify.app/)
+
+
 ## Description
-Responsive React Based App using the TMDB api. It was used to
-retool or understand React better. It use theMovieDb api for movie info and search 
-functionalities.
+Responsive Movie app using React, the TMDB api and Sass. It was used to
+retool or get a better understanding of React, theMovieDb api for movie info and search 
+functionalities and Sass for styling. 
 
 - Reference - https://youtu.be/ntYXj9W1Ez8
 
 
-Improvements should include :
+Improvements to be included :
 - Fix branding to Burble. 
 - Link to Github repo in the footer.
 - Sticky navbar.
@@ -18,9 +19,10 @@ Improvements should include :
 - Themed using NetFlix's theme.
 - Themed footer.
 - Fix slider
-- Login/Sign up (MyBurble)
-- Implement CRUD app version (MyBurble)
-- Uses mongodb to save state or users choices.(MyBurble)
+
+- Login/Sign up (MyBurble/stretchGoal0)
+- Implement CRUD app version (MyBurble/stretchGoal1)
+- Uses mongodb to save users choices.(MyBurble/stretchGoal3)
 
 ## Screenshot
 
@@ -36,14 +38,14 @@ Uses:
 ### Todos ~ Basic
 - [x] Improve data security ( hide Api keys v1)
 - [x] Apply a new color scheme (use Netflix as a reference).
-- [ ] Add a light and dark mode.
+- [x] Add a light and dark mode.
 - [ ] Add back to portfolio btn or back to github btn.
 - [ ] Create a sticky navbar.
 - [ ] Integrate Cypress testing.
 - [ ] Create 7  handwritten tests.
 - [ ] Hide api~addresses/ paths
-- [ ] Filter by genre, year, rating
-- [ ] Implement pagination
+- [ ] Filter by genre, year, rating.
+- [ ] Implement pagination for each category or page or search params. 
 - [ ] Create a code style// implement a linter.
 
  
@@ -81,14 +83,15 @@ Inspiration, code snippets, etc.
 * [Florin Pop](https://twitter.com/florinpop1705)
 * [Responsive React Movies App With API | ReactJS Movies | ReactJS Tutorial](https://youtu.be/ntYXj9W1Ez8)
 
+## Stuff Learnt/ Understood
+- string interpolation
+- new-er Sass methods (@use && @forward)
+- pathing structure
+- Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
+- Implementation of Sass in a react env 
+- Mixins and its modern implementation
 
-## Stuff I learnt
-Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
-String interpolation
+# Stuff that I still question
+- Mixins
 
-## Still Researching
-Dark Mode Implementation => 
-https://youtu.be/ys4YZr43BdY
-https://gist.github.com/JL978
-https://codesandbox.io/s/admiring-shirley-kdewh?from-embed=&file=/src/components/ThemeSetter.js
-https://javascript.plainenglish.io/the-best-way-to-add-dark-mode-to-your-react-sass-project-ce3ae3bd8616
+

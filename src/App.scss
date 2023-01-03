@@ -1,4 +1,7 @@
-@use "./scss/" as *;
+@use "./scss/" as * ;
+
+@use "../src/scss/_theme.scss";
+@use "../src/scss/variables.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
@@ -26,22 +29,38 @@ body {
   font-weight: 400;
   line-height: 1.5;
 
-  background-color: $body-bg;
-  color: $txt-color;
+  .theme--light{
+    background-color: $body-bg;
+    color: $txt-color;
+  }
+
+  .theme--dark{
+    background-color:$body-bg-dark;
+    color: $txt-color-dark;
+  }
+  
+  // TODO: Still needs work
+  // @mixin themed(){
+  //   background: t('background-color');
+  //   color: t('color');
+  // }
 
   @include mobile {
     margin-bottom: 3rem;
   }
 }
 
-.dark{
-  background-color: $body-bg-dark;
-  color: $txt-color-dark;
-
-}
 
 
+// .dark{
+//   background-color: $body-bg-dark;
+//   color: $txt-color-dark;
+// }
 
+// .light {
+//   background-color: $body-bg;
+//   color: $txt-color;
+// }
 
 a {
   text-decoration: none;
@@ -91,3 +110,8 @@ iframe{
   @include flex(center, space-between);
 }
 
+//TODO: 
+.li.themeSetter.select.option{
+  font-weight: 700;
+  font-size: 1.5rem;
+}

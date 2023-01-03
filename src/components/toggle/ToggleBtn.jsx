@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 
 const ToggleBtn = ({label, toggled, onClick}) => {
-  const [isToggled, toggle] = useState(toggled);
+const [isToggled, toggle] = useState(toggled);
 
   const callback = () => {
     toggle(!isToggled)

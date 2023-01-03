@@ -23,9 +23,9 @@ const HeroSlide = () => {
       try {
         const response = await tmdbApi.getMoviesList(movieType.popular, {params});
         setMovieItems(response.results.slice(1, 4)); // gets the first 4 movies and is response.results.slice( 1,3) in the tutorial
-        console.log(response);
+        // console.log(response);
       } catch (error) {
-        console.log(error); // changed from 'error', this gives us
+        console.log(error, "Error getting movies"); // changed from 'error', this gives us
       }
     };
     getMovies();

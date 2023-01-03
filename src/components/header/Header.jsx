@@ -1,8 +1,11 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/BurbleLogo.png';
-import ToggleBtn from '../../components/toggle/ToggleBtn';
+
+// import DarkModeToggle from "react-dark-mode-toggle";
+// import ToggleBtn from '../../components/toggle/ToggleBtn';
+import ThemeSetter from '../../context/ThemeSetter';
 
 
 const headerNav = [
@@ -24,11 +27,15 @@ const Header = () =>{
     const {pathname} =  useLocation();
     const headerRef = useRef(null);
 
-    const logState = state => {
-        console.log("Toggled:", state)
-    }
+    // const logState = state => {
+    //     console.log("Toggled:", state)
+    // }
 
     const active  = headerNav.findIndex( e => e.path === pathname);
+
+    // const [isDarkMode, setIsDarkMode] = useState(() => false);
+
+    console.log(typeof ThemeSetter);
 
     useEffect(()=>{
         const shrinkHeader = () => {
@@ -62,11 +69,9 @@ const Header = () =>{
                         </li>
                     ))
                 }
-            <ToggleBtn 
-                label=""
-                toggled={true}
-                onClick={logState}
-            /> 
+            <li className="themeSetter">
+                <ThemeSetter />
+            </li>
             </ul>
         </div>
         </div>
