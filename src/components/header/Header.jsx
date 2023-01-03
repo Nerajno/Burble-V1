@@ -69,17 +69,9 @@ const Header = () =>{
                         </li>
                     ))
                 }
-            {/* <ToggleBtn 
-                label=""
-                toggled={true}
-                onClick={logState}
-            />  */}
-             <ThemeSetter />
-            {/* <DarkModeToggle
-                onChange={ThemeSetter}
-                checked={isDarkMode}
-                size={80}
-    /> */}
+            <li className="themeSetter">
+                <ThemeSetter />
+            </li>
             </ul>
         </div>
         </div>

@@ -38,7 +38,7 @@ Uses:
 ### Todos ~ Basic
 - [x] Improve data security ( hide Api keys v1)
 - [x] Apply a new color scheme (use Netflix as a reference).
-- [ ] Add a light and dark mode.
+- [x] Add a light and dark mode.
 - [ ] Add back to portfolio btn or back to github btn.
 - [ ] Create a sticky navbar.
 - [ ] Integrate Cypress testing.
