@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/BurbleLogo.png';

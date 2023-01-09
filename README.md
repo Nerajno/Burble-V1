@@ -86,12 +86,11 @@ Inspiration, code snippets, etc.
 ## Stuff Learnt/ Understood
 - string interpolation
 - new-er Sass methods (@use && @forward)
-- pathing structure
+- Pathing structure ( relative or absolute)
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
-- Implementation of Sass in a react env 
-- Mixins and its modern implementation
+- Implementation of Sass in a react env and good reasonings why. 
+- Mixins and its modern implementation.
 
-# Stuff that I still question
+## Stuff that I still question
 - Mixins
-
 
