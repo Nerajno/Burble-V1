@@ -40,6 +40,7 @@ const Footer = () => {
             <Link to={{ pathname: "https://tinyurl.com/bdf62rbw" }} target='_blank' rel='noopener noreferrer'> You Must Watch </Link>{' '}
             <Link to={{ pathname: "https://tinyurl.com/bdf62rbw" }} target='_blank' rel='noopener noreferrer'> Recent Release </Link> 
             <Link to={{ pathname: "https://tinyurl.com/bdf62rbw" }} target='_blank' rel='noopener noreferrer'> Top IMDB </Link>{' '}
+            <Link to={{ pathname: "https://github.com/Nerajno/Burble-Ongoing" }} target='_blank' rel='noopener noreferrer'> Github Repo </Link>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}
