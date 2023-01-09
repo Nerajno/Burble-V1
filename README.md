@@ -1,7 +1,6 @@
 # Burble ~ V1 (COMPLETED )
 A React-Based Movie Search webapp. 
 
-
 ## Description
 Responsive Movie app using React, the TMDB api and Sass. It was used to
 retool or get a better understanding of React, theMovieDb api for movie info and search 
@@ -86,12 +85,11 @@ Inspiration, code snippets, etc.
 ## Stuff Learnt/ Understood
 - string interpolation
 - new-er Sass methods (@use && @forward)
-- Pathing structure
+- Pathing structure ( relative or absolute)
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
-- Implementation of Sass in a react env 
-- Mixins and its modern implementation
+- Implementation of Sass in a react env and good reasonings why. 
+- Mixins and its modern implementation.
 
-# Stuff that I still question
+## Stuff that I still question
 - Mixins
-
 
