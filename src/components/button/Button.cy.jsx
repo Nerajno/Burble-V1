@@ -4,7 +4,7 @@ import Button from './Button'
 describe('<Button />', () => {
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
-    cy.mount(<Button>text</Button>)
-    cy.contains("bug")
+    cy.mount(<Button></Button>);
+    cy.get('button').should('have.class', 'btn');
   })
 })
