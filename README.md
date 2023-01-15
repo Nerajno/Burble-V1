@@ -96,7 +96,9 @@ Inspiration, code snippets, etc.
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
 - Implementation of Sass in a react env and good reasonings why. 
 - Mixins and its modern implementation.
+- Cypress and cypress studio
 
 ## Stuff that I still question
 - Mixins
+- Cypress functions ( cy.spy)
 

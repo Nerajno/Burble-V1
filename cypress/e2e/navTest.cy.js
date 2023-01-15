@@ -11,6 +11,7 @@ describe("Navtest successfully", ()=>{
     })
 })
 
+//TODO: Review 
 describe("Home page Hero", ()=> {
     it.only('Reviews the home page', ()=>{
         cy.intercept("https://api.themoviedb.org/3/movie/popular?api_key=d5199020aac77d6859c71466db7228e1&page=1", {fixture: 'movies.json'})

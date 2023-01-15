@@ -9,8 +9,6 @@ module.exports = defineConfig({
   baseUrl: "http://localhost:2000/"
   },
 
-
-
   component: {
     devServer: {
       framework: "create-react-app",
