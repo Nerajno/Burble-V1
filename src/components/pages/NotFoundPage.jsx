@@ -7,7 +7,7 @@ const NotFoundPage = () => {
         <div>
         <img src={NotFound} alt="not found " />
         <p style={{ textAlign: "center" }}>
-            <Link to="/">Go to Home </Link>
+            <Link to="/">Yup,  Something Is Wrong.... Go Home </Link>
         </p>
     </div>
 );
