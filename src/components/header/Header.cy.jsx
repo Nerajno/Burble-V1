@@ -4,7 +4,7 @@ import Header from './Header'
 describe('<Header />', () => {
   it('renders', () => {
     cy.mount(<Header></Header>);
-    cy.get('.header').should('exist');
+    cy.get('.header').should('have.class', 'header');
   });
 
 })
