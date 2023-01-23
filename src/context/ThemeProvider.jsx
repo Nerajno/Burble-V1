@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import ThemeContext, { initialThemeState }  from './ThemeContext';
  
@@ -12,11 +13,11 @@ const ThemeProvider = ({ children }) => {
         if(!!saveThemeLocal) {
             setTheme(saveThemeLocal)
         }
-    }, [])
+    }, [localStorage])
 
     useEffect(() => {
         localStorage.setItem("globalTheme", theme);
-    }, [theme]);
+    },);
 
     return(
         <ThemeContext.Provider value={{ theme, setTheme }}>
