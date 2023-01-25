@@ -1,17 +1,30 @@
 import React from 'react'
 import Header from './Header'
 
-describe('<Header />', () => {
-  it('renders', () => {
+describe('Header', () => {
+  beforeEach(() => {
     cy.mount(<Header></Header>);
-    cy.get('.header').should('have.class', 'header');
   });
 
-})
+  it('should render the header ', () => {
+    cy.get('header').should('not.have.class', 'header');
+  });
 
-//   it('should render the header', () => {
-//     cy.get('.header').should('exist');
-//   });
+  it('should add the "shrink" class to the header on scroll', () => {
+    cy.get('.header').should('not.have.class', 'shrink');
+    cy.get('body').scrollTo('top');
+    cy.get('.header').should('have.class', 'shrink');
+  });
+});
+
+
+  // it('renders', () => {
+  //   cy.get('.header').should('have.class', 'header');
+  // });
+
+
+
+
 
 //   it('should render the logo', () => {
 //     cy.get('.header .logo img').should('have.attr', 'src', 'BurbleLogo.png');
@@ -25,11 +38,11 @@ describe('<Header />', () => {
 //     cy.get('.header__nav li').eq(2).should('have.text', 'TV Series');
 //   });
 
-//   it('should add the "shrink" class to the header on scroll', () => {
-//     cy.get('.header').should('not.have.class', 'shrink');
-//     cy.get('body').scrollTo('top');
-//     cy.get('.header').should('have.class', 'shrink');
-//   });
+  // it('should add the "shrink" class to the header on scroll', () => {
+  //   cy.get('.header').should('not.have.class', 'shrink');
+  //   cy.get('body').scrollTo('top');
+  //   cy.get('.header').should('have.class', 'shrink');
+  // });
 // });
 
 

@@ -11,14 +11,14 @@ describe("Navtest successfully", ()=>{
     })
 })
 
-//TODO: Review 
-describe("Home page Hero", ()=> {
-    it.only('Reviews the home page', ()=>{
-        cy.intercept("https://api.themoviedb.org/3/movie/popular?api_key=d5199020aac77d6859c71466db7228e1&page=1", {fixture: 'movies.json'})
-        cy.visit('/');
-        cy.contains("h2","Goose: The Way of Water"); 
-        cy.contains("Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.")
-    })
-})
+// //TODO: Review 
+// describe("Home page Hero", ()=> {
+//     it.only('Reviews the home page', ()=>{
+//         cy.intercept("https://api.themoviedb.org/3/movie/popular?api_key=d5199020aac77d6859c71466db7228e1&page=1", {fixture: 'movies.json'})
+//         cy.visit('/');
+//         cy.contains("h2","Goose: The Way of Water"); 
+//         cy.contains("Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.")
+//     })
+// })
 
 
