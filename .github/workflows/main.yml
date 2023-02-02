@@ -1,0 +1,3 @@
+# Create a github action that runs via PR & another action to run linting.  
+# This action will run the tests and linting.
+# If the tests and linting pass, it will deploy the site to the gh-pages branch.
