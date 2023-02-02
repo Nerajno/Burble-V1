@@ -12,9 +12,7 @@ describe('', () => {
     cy.contains('The Shawshank Redemption').should('be.visible');
     cy.contains('Cast').should('be.visible');
     cy.contains('Trailer').should('be.visible');
-    cy.get(
-      '.movie-content.container div.movie-content__info div.genres'
-    ).should('be.visible');
+ xcv
     cy.get('.movie_player').should('be.visible');
   });
 });
@@ -25,3 +23,9 @@ describe('', () => {
 // type in a movie title,
 // finds that movie in the result set and click it,
 // verify expected movie info is displayed (cast, title, buttons, trailers, tags)
+
+
+//Stretch goal
+// Cast should a image at  => div.cast > div.casts > div:nth-child(1)
+// Movie overview should be have text => div > div.mb-3.movie-content.container > div.movie-content__info > p.overview
+// Find the 1st movie trailer and play it and stop playing it =>
