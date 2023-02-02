@@ -39,14 +39,20 @@ Uses:
 - [x] Improve data security ( hide Api keys v1)
 - [x] Apply a new color scheme (use Netflix as a reference).
 - [x] Add a light and dark mode.
-- [ ] Add back to portfolio btn or back to github btn.
-- [ ] Create a sticky navbar.
+- [x] Add back to portfolio btn or back to github btn.
+- [x] Create a sticky navbar.
 - [ ] Integrate Cypress testing.
-- [ ] Create 7  handwritten tests.
-- [ ] Hide api~addresses/ paths
+- [ ] Create 7  handwritten tests ( See Mark's notes) && this https://tinyurl.com/yeyt7fum
+- [ ] Hide api~addresses/ paths ??
 - [ ] Filter by genre, year, rating.
-- [ ] Implement pagination for each category or page or search params. 
-- [ ] Create a code style// implement a linter.
+~~~- [ ] Implement pagination for each category or page or search params. ~~~
+- [ ] Create a code style// implement a linter that runs via git push 
+- [ ] Create a test that runs before merging to main as a GH actions.
+- [ ] Fix the ReadMe.
+
+### Todos ~ Level 2
+- [ ] Refactor the code
+
 
  
 ## Help/Suggestions
@@ -84,14 +90,15 @@ Inspiration, code snippets, etc.
 * [Responsive React Movies App With API | ReactJS Movies | ReactJS Tutorial](https://youtu.be/ntYXj9W1Ez8)
 
 ## Stuff Learnt/ Understood
-- string interpolation
-- new-er Sass methods (@use && @forward)
-- Pathing structure
+- String interpolation.
+- New-er Sass methods (@use && @forward).
+- Pathing structure ( relative or absolute).
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
-- Implementation of Sass in a react env 
-- Mixins and its modern implementation
+- Implementation of Sass in a react env and good reasonings why. 
+- Mixins and its modern implementation.
+- Cypress and cypress studio
 
-# Stuff that I still question
+## Stuff that I still question
 - Mixins
-
+- Cypress functions ( cy.spy)
 

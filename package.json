@@ -62,7 +62,8 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^6.6.0",
+    "cypress": "^12.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "node-sass": "^8.0.0",
     "reload": "^3.2.0"
   }

@@ -1,10 +1,7 @@
-import React, {useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './header.scss';
 import logo from '../../assets/BurbleLogo.png';
-
-// import DarkModeToggle from "react-dark-mode-toggle";
-// import ToggleBtn from '../../components/toggle/ToggleBtn';
 import ThemeSetter from '../../context/ThemeSetter';
 
 
@@ -24,18 +21,9 @@ const headerNav = [
 ]
 
 const Header = () =>{
-    const {pathname} =  useLocation();
+    const {pathname} = useLocation();
     const headerRef = useRef(null);
-
-    // const logState = state => {
-    //     console.log("Toggled:", state)
-    // }
-
     const active  = headerNav.findIndex( e => e.path === pathname);
-
-    // const [isDarkMode, setIsDarkMode] = useState(() => false);
-
-    console.log(typeof ThemeSetter);
 
     useEffect(()=>{
         const shrinkHeader = () => {
@@ -57,7 +45,6 @@ const Header = () =>{
             <div className="logo">
                 <img src={logo} alt=""/>
                 <Link to="/">Burble</Link> 
-                {/* TODO: Need make logo and the name one link  to click */}
             </div>
             <ul className="header__nav">
                 {
