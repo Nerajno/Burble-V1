@@ -35,20 +35,24 @@ Uses:
 - [Images](https://unsplash.com/)
 - [API](https://www.themoviedb.org/)
 
-### Todos ~ Basic
+<details open>
+<summary>### Todos ~ Basic </summary>
+<br>
 - [x] Improve data security ( hide Api keys v1)
 - [x] Apply a new color scheme (use Netflix as a reference).
 - [x] Add a light and dark mode.
 - [x] Add back to portfolio btn or back to github btn.
 - [x] Create a sticky navbar.
-- [ ] Integrate Cypress testing.
+- [x] Integrate Cypress testing.
 - [ ] Create 7  handwritten tests ( See Mark's notes) && this https://tinyurl.com/yeyt7fum
 - [ ] Hide api~addresses/ paths ??
 - [ ] Filter by genre, year, rating.
-~~~- [ ] Implement pagination for each category or page or search params. ~~~
+- [ ] Implement pagination for each category or page or search params. ~~~
 - [ ] Create a code style// implement a linter that runs via git push 
 - [ ] Create a test that runs before merging to main as a GH actions.
-- [ ] Fix the ReadMe.
+- [ ] Update the ReadMe.
+</details>
+
 
 ### Todos ~ Level 2
 - [ ] Refactor the code
