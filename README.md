@@ -35,9 +35,9 @@ Uses:
 - [Images](https://unsplash.com/)
 - [API](https://www.themoviedb.org/)
 
-<details open>
-<summary>### Todos ~ Basic </summary>
-<br>
+
+### Todos ~ Basic
+
 - [x] Improve data security ( hide Api keys v1)
 - [x] Apply a new color scheme (use Netflix as a reference).
 - [x] Add a light and dark mode.
@@ -51,7 +51,7 @@ Uses:
 - [ ] Create a code style// implement a linter that runs via git push 
 - [ ] Create a test that runs before merging to main as a GH actions.
 - [ ] Update the ReadMe.
-</details>
+
 
 
 ### Todos ~ Level 2
