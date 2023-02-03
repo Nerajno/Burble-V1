@@ -14,7 +14,8 @@
 	},
 	"plugins": ["react", "cypress"],
 	"rules": {
-		"react/jsx-uses-react": "error",
-		"react/jsx-uses-vars": "error"
+		"no-console": "on"
+		// "react/jsx-uses-react": "error",
+		// "react/jsx-uses-vars": "error"
 	}
 }
