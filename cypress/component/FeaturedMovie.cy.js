@@ -1,5 +1,13 @@
-describe('FeaturedMovie.cy.js', () => {
-  it('playground', () => {
-    // cy.mount()
-  })
-})
+describe(
+    "FeaturedMovie.cy.js",
+    () => {
+
+        it(
+            "playground",
+            () => {
+                // Cy.mount()
+            }
+        );
+
+    }
+);
