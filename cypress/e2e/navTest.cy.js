@@ -1,31 +1,15 @@
-describe(
-    "Navtest successfully",
-    () => {
-
-        it(
-            "Reviews 4 nav links",
-            () => {
-
-                cy.visit("http://localhost:2000/");
-                cy.contains("Trending Movies").should("be.visible");
-                cy.get(".header__nav > :nth-child(2) > a").click();
-                cy.contains(
-                    "h2",
-                    "Movies"
-                );
-                cy.get(".header__nav > :nth-child(3) > a").click();
-                cy.contains(
-                    "h2",
-                    "TV Series"
-                );
-                cy.get(".header__nav > :nth-child(1) > a").click();
-                cy.contains("Trending Movies").should("be.visible");
-
-            }
-        );
-
-    }
-);
+describe('Navtest successfully', () => {
+	it('Reviews 4 nav links', () => {
+		cy.visit('http://localhost:2000/');
+		cy.contains('Trending Movies').should('be.visible');
+		cy.get('.header__nav > :nth-child(2) > a').click();
+		cy.contains('h2', 'Movies');
+		cy.get('.header__nav > :nth-child(3) > a').click();
+		cy.contains('h2', 'TV Series');
+		cy.get('.header__nav > :nth-child(1) > a').click();
+		cy.contains('Trending Movies').should('be.visible');
+	});
+});
 
 // //TODO: Review
 // Describe("Home page Hero", ()=> {

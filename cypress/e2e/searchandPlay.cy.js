@@ -1,32 +1,20 @@
-describe(
-    "",
-    () => {
-
-        it(
-            "Searches and plays a movie",
-            () => {
-
-                cy.visit("http://localhost:2000/movie");
-                cy.contains("Movies").should("be.visible");
-                cy.get("[data-testid=\"input\"]").type("The Shawshank Redemption");
-                cy.get("button").contains("Search").
-                    click();
-                cy.get(".movie-search > .small").click();
-                cy.get("a > h3").contains("The Shawshank Redemption").
-                    click({
-                        "force": true
-                    });
-                // Cy.wait(2000);
-                cy.contains("The Shawshank Redemption").should("be.visible");
-                cy.contains("Cast").should("be.visible");
-                cy.contains("Trailer").should("be.visible");
-                // Cy.get(".movie_player").should("be.visible");
-
-            }
-        );
-
-    }
-);
+describe('', () => {
+	it('Searches and plays a movie', () => {
+		cy.visit('http://localhost:2000/movie');
+		cy.contains('Movies').should('be.visible');
+		cy.get('[data-testid="input"]').type('The Shawshank Redemption');
+		cy.get('button').contains('Search').click();
+		cy.get('.movie-search > .small').click();
+		cy.get('a > h3').contains('The Shawshank Redemption').click({
+			force: true,
+		});
+		// Cy.wait(2000);
+		cy.contains('The Shawshank Redemption').should('be.visible');
+		cy.contains('Cast').should('be.visible');
+		cy.contains('Trailer').should('be.visible');
+		// Cy.get(".movie_player").should("be.visible");
+	});
+});
 
 // Add a cypress command that clicks on a trailer button and plays the trailer
 

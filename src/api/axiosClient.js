@@ -1,41 +1,35 @@
-import axios from "axios";
-import queryString from "query-string";
-import apiConfig from "./apiConfig";
+import axios from 'axios';
+import queryString from 'query-string';
+import apiConfig from './apiConfig';
 
 const axiosClient = axios.create({
-    "baseURL": apiConfig.baseUrl,
-    "headers": {
-        "Content-Type": "application/json"
-    },
+	baseURL: apiConfig.baseUrl,
+	headers: {
+		'Content-Type': 'application/json',
+	},
 
-    /*
-     * ParamsSerializer: params => queryString.stringify({...params, api_key: apiConfig.apiKey}),
-     * TODO: Create this as an issue in the project repo
-     */
-    "paramsSerializer": {
-        "serialize": (params) => queryString.stringify({...params,
-            "api_key": apiConfig.apiKey})
-    }
+	/*
+	 * ParamsSerializer: params => queryString.stringify({...params, api_key: apiConfig.apiKey}),
+	 * TODO: Create this as an issue in the project repo
+	 */
+	paramsSerializer: {
+		serialize: (params) =>
+			queryString.stringify({ ...params, api_key: apiConfig.apiKey }),
+	},
 });
 
 axiosClient.interceptors.request.use(async (config) => config);
 
 axiosClient.interceptors.response.use(
-    (response) => {
-
-        if (response && response.data) {
-
-            return response.data;
-
-        }
-        return response;
-
-    },
-    (error) => {
-
-        throw error;
-
-    }
+	(response) => {
+		if (response && response.data) {
+			return response.data;
+		}
+		return response;
+	},
+	(error) => {
+		throw error;
+	}
 );
 
 export default axiosClient;
