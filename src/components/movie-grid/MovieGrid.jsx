@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import "./movie-grid.scss";
+import './movie-grid.scss';
 import MovieCard from '../movie-card/MovieCard';
 import { useParams, useHistory } from 'react-router-dom';
 import { OutlineButton } from '../button/Button';
