@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
-import './movie-list.scss';
-import MovieCard from '../movie-card/MovieCard';
+import "./movie-list.scss";
+import MovieCard from "../movie-card/MovieCard";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import tmdbApi, { category } from '../../api/tmdbApi';
+import tmdbApi, { category } from "../../api/tmdbApi";
 
 const MovieList = (props) => {
 	const [items, setItems] = useState([]);
@@ -15,7 +15,7 @@ const MovieList = (props) => {
 			let response = null;
 			const params = {};
 
-			if (props.type !== 'similar') {
+			if (props.type !== "similar") {
 				switch (props.category) {
 					case category.movie:
 						response = await tmdbApi.getMoviesList(props.type, { params });
@@ -36,7 +36,7 @@ const MovieList = (props) => {
 			<Swiper
 				grabCursor={true}
 				spaceBetween={10}
-				slidesPerView={'auto'}
+				slidesPerView={"auto"}
 				onSwiper={(swiper) => console.log(swiper)} //TODO: Review
 			>
 				{items.map((item, i) => (

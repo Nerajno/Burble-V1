@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import ThemeContext from './ThemeContext';
+import ThemeContext from "./ThemeContext";
 
 const ThemeSetter = () => {
 	const { theme, setTheme } = useContext(ThemeContext);
@@ -18,6 +18,6 @@ const ThemeSetter = () => {
 	);
 };
 
-const themeOptions = [{ value: 'light' }, { value: 'dark' }];
+const themeOptions = [{ value: "light" }, { value: "dark" }];
 
 export default ThemeSetter;

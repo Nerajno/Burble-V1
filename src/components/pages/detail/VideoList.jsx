@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
 
-import { useParams } from 'react-router';
-import tmdbApi from '../../../api/tmdbApi';
+import { useParams } from "react-router";
+import tmdbApi from "../../../api/tmdbApi";
 
 const VideoList = (props) => {
 	const { category } = useParams();
@@ -30,8 +30,8 @@ const Video = (props) => {
 	const iframeRef = useRef(null);
 
 	useEffect(() => {
-		const height = (iframeRef.current.offsetWidth * 9) / 16 + 'px';
-		iframeRef.current.setAttribute('height', height);
+		const height = (iframeRef.current.offsetWidth * 9) / 16 + "px";
+		iframeRef.current.setAttribute("height", height);
 	}, []);
 
 	return (

@@ -1,9 +1,9 @@
-@use './scss/' as *;
+@use "./scss/" as *;
 
-@use '../src/scss/_theme.scss';
-@use '../src/scss/variables.scss';
+@use "../src/scss/_theme.scss";
+@use "../src/scss/variables.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 
 * {
 	padding: 0;

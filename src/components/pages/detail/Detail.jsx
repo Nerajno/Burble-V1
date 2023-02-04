@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router";
 
-import tmdbApi from '../../../api/tmdbApi';
-import apiConfig from '../../../api/apiConfig';
+import tmdbApi from "../../../api/tmdbApi";
+import apiConfig from "../../../api/apiConfig";
 
-import CastList from './CastList';
+import CastList from "./CastList";
 
-import '../detail/detail.scss';
-import VideoList from './VideoList';
+import "../detail/detail.scss";
+import VideoList from "./VideoList";
 
 const Detail = () => {
 	const { category, id } = useParams();
