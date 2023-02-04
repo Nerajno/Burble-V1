@@ -6,7 +6,7 @@
 	background-repeat: no-repeat;
 }
 .banner::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -15,7 +15,7 @@
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .banner::after {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: 0;
 	left: 0;

@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState, useRef } from "react";
+import PropTypes from "prop-types";
 
-import './modal.scss';
+import "./modal.scss";
 
 const Modal = (props) => {
 	const [active, setActive] = useState(false);
@@ -11,7 +11,7 @@ const Modal = (props) => {
 	}, [props.active]);
 
 	return (
-		<div id={props.id} className={`modal ${active ? 'active' : ''}`}>
+		<div id={props.id} className={`modal ${active ? "active" : ""}`}>
 			{props.children}
 		</div>
 	);
@@ -26,7 +26,7 @@ export const ModalContent = (props) => {
 	const contentRef = useRef(null);
 
 	const closeModal = () => {
-		contentRef.current.parentNode.classList.remove('active');
+		contentRef.current.parentNode.classList.remove("active");
 		if (props.onClose) props.onClose();
 	};
 	return (

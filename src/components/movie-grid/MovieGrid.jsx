@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './movie-grid.scss';
-import MovieCard from '../movie-card/MovieCard';
-import { useParams, useHistory } from 'react-router-dom';
-import { OutlineButton } from '../button/Button';
-import Input from '../input/Input';
+import React, { useState, useEffect, useCallback } from "react";
+import "./movie-grid.scss";
+import MovieCard from "../movie-card/MovieCard";
+import { useParams, useHistory } from "react-router-dom";
+import { OutlineButton } from "../button/Button";
+import Input from "../input/Input";
 
-import tmdbApi, { category, movieType, tvType } from '../../api/tmdbApi';
-import { Button } from 'react-bootstrap';
+import tmdbApi, { category, movieType, tvType } from "../../api/tmdbApi";
+import { Button } from "react-bootstrap";
 
 const MovieGrid = (props) => {
 	const [items, setItems] = useState([]);
@@ -91,7 +91,7 @@ const MovieGrid = (props) => {
 const MovieSearch = (props) => {
 	const history = useHistory();
 
-	const [keyword, setKeyword] = useState(props.keyword ? props.keyword : '');
+	const [keyword, setKeyword] = useState(props.keyword ? props.keyword : "");
 
 	const goToSearch = useCallback(() => {
 		if (keyword.trim().length > 0) {
@@ -102,14 +102,14 @@ const MovieSearch = (props) => {
 	useEffect(() => {
 		const enterEvent = (e) => {
 			e.preventDefault();
-			if (e.keyCode === 'Enter') {
+			if (e.keyCode === "Enter") {
 				// TODO : is this  working.
 				goToSearch();
 			}
 		};
-		document.removeEventListener('keyup', enterEvent);
+		document.removeEventListener("keyup", enterEvent);
 		return () => {
-			document.removeEventListener('keyup', enterEvent);
+			document.removeEventListener("keyup", enterEvent);
 		};
 	}, [keyword, goToSearch]);
 

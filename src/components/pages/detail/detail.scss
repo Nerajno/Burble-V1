@@ -1,4 +1,4 @@
-@use '../../../scss/' as *;
+@use "../../../scss/" as *;
 //  TODO: Need to look into this for the tutorial
 
 .banner {
@@ -9,7 +9,7 @@
 	background-repeat: no-repeat;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -19,7 +19,7 @@
 	}
 
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 0;
 		left: 0;

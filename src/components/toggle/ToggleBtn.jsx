@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ToggleBtn({ label, toggled, onClick }) {
 	const [isToggled, toggle] = useState(toggled),

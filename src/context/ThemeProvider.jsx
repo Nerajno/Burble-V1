@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import ThemeContext, { initialThemeState } from './ThemeContext';
+import React, { useState, useEffect } from "react";
+import ThemeContext, { initialThemeState } from "./ThemeContext";
 
 const ThemeProvider = ({ children }) => {
 	const [theme, setTheme] = useState(initialThemeState.theme);
@@ -7,7 +7,7 @@ const ThemeProvider = ({ children }) => {
 	const localStorage = window.localStorage;
 
 	useEffect(() => {
-		const saveThemeLocal = localStorage.getItem('globalTheme');
+		const saveThemeLocal = localStorage.getItem("globalTheme");
 
 		if (!!saveThemeLocal) {
 			setTheme(saveThemeLocal);
@@ -15,7 +15,7 @@ const ThemeProvider = ({ children }) => {
 	}, [localStorage]);
 
 	useEffect(() => {
-		localStorage.setItem('globalTheme', theme);
+		localStorage.setItem("globalTheme", theme);
 	});
 
 	return (

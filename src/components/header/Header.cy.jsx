@@ -1,19 +1,19 @@
-import React from 'react';
-import Header from './Header';
+import React from "react";
+import Header from "./Header";
 
-describe('Header', () => {
+describe("Header", () => {
 	beforeEach(() => {
 		cy.mount(<Header></Header>);
 	});
 
-	it('should render the header ', () => {
-		cy.get('header').should('not.have.class', 'header');
+	it("should render the header ", () => {
+		cy.get("header").should("not.have.class", "header");
 	});
 
 	it('should add the "shrink" class to the header on scroll', () => {
-		cy.get('.header').should('not.have.class', 'shrink');
-		cy.get('body').scrollTo('top');
-		cy.get('.header').should('have.class', 'shrink');
+		cy.get(".header").should("not.have.class", "shrink");
+		cy.get("body").scrollTo("top");
+		cy.get(".header").should("have.class", "shrink");
 	});
 });
 

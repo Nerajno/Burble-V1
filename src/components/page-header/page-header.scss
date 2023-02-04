@@ -1,4 +1,4 @@
-@use '../../scss/variables' as *;
+@use "../../scss/variables" as *;
 
 .page-header {
 	padding: $header-height 0 2rem;
@@ -16,7 +16,7 @@
 	}
 
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 0;
 		left: 0;
