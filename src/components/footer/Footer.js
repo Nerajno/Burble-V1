@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.scss";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 // TODO: Look into importing multiple items from 1 folder || Attempt v1 not good so far
 import bg from "../../assets/footer-bg.jpg";
@@ -27,7 +27,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Contact Us{" "}
@@ -35,7 +35,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Terms Of Service{" "}
@@ -43,7 +43,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://github.com/Nerajno/Burble" }}
+							to={{pathname: "https://github.com/Nerajno/Burble"}}
 						>
 							{" "}
 							About Me{" "}
@@ -53,7 +53,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Live{" "}
@@ -61,7 +61,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							FAQ{" "}
@@ -69,7 +69,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Premium{" "}
@@ -77,7 +77,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Privacy Policy{" "}
@@ -87,7 +87,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							You Must Watch{" "}
@@ -95,7 +95,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Recent Release{" "}
@@ -103,7 +103,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://tinyurl.com/bdf62rbw" }}
+							to={{pathname: "https://tinyurl.com/bdf62rbw"}}
 						>
 							{" "}
 							Top IMDB{" "}
@@ -111,7 +111,7 @@ function Footer() {
 						<Link
 							rel="noopener noreferrer"
 							target="_blank"
-							to={{ pathname: "https://github.com/Nerajno/Burble-Ongoing" }}
+							to={{pathname: "https://github.com/Nerajno/Burble-Ongoing"}}
 						>
 							{" "}
 							Github Repo{" "}

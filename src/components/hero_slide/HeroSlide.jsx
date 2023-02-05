@@ -1,16 +1,16 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {useEffect, useState, useRef} from "react";
 
-import SwiperCore, { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {Autoplay} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
 
-import Button, { OutlineButton } from "../button/Button";
-import Modal, { ModalContent } from "../modal/Modal";
+import Button, {OutlineButton} from "../button/Button";
+import Modal, {ModalContent} from "../modal/Modal";
 
-import tmdbApi, { category, movieType } from "../../api/tmdbApi";
+import tmdbApi, {category, movieType} from "../../api/tmdbApi";
 import apiConfig from "../../api/apiConfig";
 
 import "./hero-slide.scss";
-import { useHistory } from "react-router";
+import {useHistory} from "react-router";
 // import { Modal } from 'react-bootstrap';
 
 const HeroSlide = () => {
@@ -19,7 +19,7 @@ const HeroSlide = () => {
 	// console.log(movieItems);
 	useEffect(() => {
 		const getMovies = async () => {
-			const params = { page: 1 };
+			const params = {page: 1};
 			try {
 				const response = await tmdbApi.getMoviesList(movieType.popular, {
 					params,
@@ -44,7 +44,7 @@ const HeroSlide = () => {
 			>
 				{movieItems.map((item, i) => (
 					<SwiperSlide key={i}>
-						{({ isActive }) => (
+						{({isActive}) => (
 							<HeroSlideItem
 								item={item}
 								className={`${isActive ? "active" : ""}`}
@@ -86,7 +86,7 @@ const HeroSlideItem = (props) => {
 	return (
 		<div
 			className={`hero-slide__item ${props.className}`}
-			style={{ backgroundImage: `url(${background})` }}
+			style={{backgroundImage: `url(${background})`}}
 		>
 			<div className="hero-slide__item__content container">
 				<div className="hero-slide__item__content__info">

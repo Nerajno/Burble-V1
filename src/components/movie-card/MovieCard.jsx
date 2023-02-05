@@ -1,10 +1,10 @@
 import React from "react";
 
 import "./movie-card.scss";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Button from "../button/Button";
 
-import { category } from "../../api/tmdbApi";
+import {category} from "../../api/tmdbApi";
 import apiConfig from "../../api/apiConfig";
 
 const MovieCard = (props) => {
@@ -14,7 +14,7 @@ const MovieCard = (props) => {
 
 	return (
 		<Link to={link}>
-			<div className="movie-card" style={{ backgroundImage: `url(${bg})` }}>
+			<div className="movie-card" style={{backgroundImage: `url(${bg})`}}>
 				<Button>
 					<i className="bx bx-play"></i>
 				</Button>

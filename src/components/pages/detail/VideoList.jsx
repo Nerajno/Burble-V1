@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {useEffect, useState, useRef} from "react";
 
-import { useParams } from "react-router";
+import {useParams} from "react-router";
 import tmdbApi from "../../../api/tmdbApi";
 
 const VideoList = (props) => {
-	const { category } = useParams();
+	const {category} = useParams();
 	const [videos, setVideos] = useState([]);
 
 	useEffect(() => {

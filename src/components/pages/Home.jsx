@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-import { OutlineButton } from "../button/Button";
+import {OutlineButton} from "../button/Button";
 import HeroSlide from "../hero_slide/HeroSlide";
 import MovieList from "../movie-list/MovieList";
 
-import { category, movieType, tvType } from "../../api/tmdbApi";
+import {category, movieType, tvType} from "../../api/tmdbApi";
 
 const Home = () => {
 	return (

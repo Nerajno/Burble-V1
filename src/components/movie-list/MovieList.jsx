@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 
 import "./movie-list.scss";
 import MovieCard from "../movie-card/MovieCard";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
-import tmdbApi, { category } from "../../api/tmdbApi";
+import tmdbApi, {category} from "../../api/tmdbApi";
 
 const MovieList = (props) => {
 	const [items, setItems] = useState([]);
@@ -18,10 +18,10 @@ const MovieList = (props) => {
 			if (props.type !== "similar") {
 				switch (props.category) {
 					case category.movie:
-						response = await tmdbApi.getMoviesList(props.type, { params });
+						response = await tmdbApi.getMoviesList(props.type, {params});
 						break;
 					default:
-						response = await tmdbApi.getTvList(props.type, { params });
+						response = await tmdbApi.getTvList(props.type, {params});
 				}
 			} else {
 				response = await tmdbApi.similar(props.category, props.id);
