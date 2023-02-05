@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import "./movie-grid.scss";
 import MovieCard from "../movie-card/MovieCard";
-import { useParams, useHistory } from "react-router-dom";
-import { OutlineButton } from "../button/Button";
+import {useParams, useHistory} from "react-router-dom";
+import {OutlineButton} from "../button/Button";
 import Input from "../input/Input";
 
-import tmdbApi, { category, movieType, tvType } from "../../api/tmdbApi";
-import { Button } from "react-bootstrap";
+import tmdbApi, {category, movieType, tvType} from "../../api/tmdbApi";
+import {Button} from "react-bootstrap";
 
 const MovieGrid = (props) => {
 	const [items, setItems] = useState([]);
@@ -14,7 +14,7 @@ const MovieGrid = (props) => {
 	const [page, setPage] = useState(1);
 	const [totalPage, setTotalPage] = useState(0);
 
-	const { keyword } = useParams();
+	const {keyword} = useParams();
 
 	useEffect(() => {
 		const getList = async () => {
@@ -28,13 +28,13 @@ const MovieGrid = (props) => {
 						});
 						break;
 					default:
-						response = await tmdbApi.getTvList(tvType.popular, { params });
+						response = await tmdbApi.getTvList(tvType.popular, {params});
 				}
 			} else {
 				const params = {
 					query: keyword,
 				};
-				response = await tmdbApi.search(props.category, { params });
+				response = await tmdbApi.search(props.category, {params});
 			}
 			setItems(response.results);
 			setTotalPage(response.total_pages);
@@ -55,14 +55,14 @@ const MovieGrid = (props) => {
 					});
 					break;
 				default:
-					response = await tmdbApi.getTvList(tvType.popular, { params });
+					response = await tmdbApi.getTvList(tvType.popular, {params});
 			}
 		} else {
 			const params = {
 				page: page + 1,
 				query: keyword,
 			};
-			response = await tmdbApi.search(props.category, { params });
+			response = await tmdbApi.search(props.category, {params});
 		}
 		setItems([...items, ...response.results]);
 		setPage(page + 1);

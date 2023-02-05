@@ -14,7 +14,7 @@ const axiosClient = axios.create({
 	 */
 	paramsSerializer: {
 		serialize: (params) =>
-			queryString.stringify({ ...params, api_key: apiConfig.apiKey }),
+			queryString.stringify({...params, api_key: apiConfig.apiKey}),
 	},
 });
 

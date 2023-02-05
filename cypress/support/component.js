@@ -23,7 +23,7 @@ import "./commands";
  * require('./commands')
  */
 
-import { mount } from "cypress/react";
+import {mount} from "cypress/react";
 
 Cypress.Commands.add("mount", mount);
 

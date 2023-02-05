@@ -1,11 +1,11 @@
 import React from "react";
-import { useParams } from "react-router";
+import {useParams} from "react-router";
 import PageHeader from "../page-header/PageHeader";
-import { category as cate } from "../../api/tmdbApi";
+import {category as cate} from "../../api/tmdbApi";
 import MovieGrid from "../movie-grid/MovieGrid";
 
 const Catalog = () => {
-	const { category } = useParams();
+	const {category} = useParams();
 	console.log(category);
 	return (
 		<>

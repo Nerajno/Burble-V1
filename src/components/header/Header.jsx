@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, {useEffect, useRef} from "react";
+import {Link, useLocation} from "react-router-dom";
 import "./header.scss";
 import logo from "../../assets/BurbleLogo.png";
 import ThemeSetter from "../../context/ThemeSetter";
@@ -20,7 +20,7 @@ const headerNav = [
 ];
 
 const Header = () => {
-	const { pathname } = useLocation();
+	const {pathname} = useLocation();
 	const headerRef = useRef(null);
 	const active = headerNav.findIndex((e) => e.path === pathname);
 

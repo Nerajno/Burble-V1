@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router";
 
 import tmdbApi from "../../../api/tmdbApi";
 import apiConfig from "../../../api/apiConfig";
@@ -10,12 +10,12 @@ import "../detail/detail.scss";
 import VideoList from "./VideoList";
 
 const Detail = () => {
-	const { category, id } = useParams();
+	const {category, id} = useParams();
 	const [item, setItem] = useState(null);
 
 	useEffect(() => {
 		const getDetail = async () => {
-			const response = await tmdbApi.detail(category, id, { params: {} });
+			const response = await tmdbApi.detail(category, id, {params: {}});
 			setItem(response);
 			window.scrollTo(0, 0);
 		};
