@@ -1,5 +1,5 @@
 describe("", () => {
-	it("Searches and plays a movie", () => {
+	it("Searches and plays the first movie trailer", () => {
 		cy.visit("http://localhost:2000/movie");
 		cy.contains("Movies").should("be.visible");
 		cy.get('[data-testid="input"]').type("The Shawshank Redemption");
