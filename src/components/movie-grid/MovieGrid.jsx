@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './movie-grid.scss';
-import MovieCard from '../movie-card/MovieCard';
-import { useParams, useHistory } from 'react-router-dom';
-import { OutlineButton } from '../button/Button';
-import Input from '../input/input';
+import React, {useState, useEffect, useCallback} from "react";
+import "./movie-grid.scss";
+import MovieCard from "../movie-card/MovieCard";
+import {useParams, useHistory} from "react-router-dom";
+import {OutlineButton} from "../button/Button";
+import Input from "../input/Input";
 
 import tmdbApi, {category, movieType, tvType} from "../../api/tmdbApi";
 import {Button} from "react-bootstrap";
@@ -99,31 +99,19 @@ const MovieSearch = (props) => {
 		}
 	}, [keyword, props.category, history]);
 
-    useEffect(() => {
-        const enterEvent = (e) => {
-            e.preventDefault();
-            if (e.keyCode === "Enter" ){ // TODO : is this  working.
-                goToSearch(); 
-            }
-        }
-        document.removeEventListener('keyup', enterEvent);
-        return () => {
-            document.removeEventListener('keyup', enterEvent);
-        };
-    }, [keyword, goToSearch])
-    
-    return(
-        <div className="movie-search">
-            <Input
-                type="text"
-                placeholder="Enter Keyword"
-                value={keyword}
-                onChange={(e)=> setKeyword(e.target.value)}
-             />
-            <Button className="small" onClick={goToSearch}>Search</Button>
-        </div>
-    )
-}
+	useEffect(() => {
+		const enterEvent = (e) => {
+			e.preventDefault();
+			if (e.keyCode === "Enter") {
+				// TODO : is this  working.
+				goToSearch();
+			}
+		};
+		document.removeEventListener("keyup", enterEvent);
+		return () => {
+			document.removeEventListener("keyup", enterEvent);
+		};
+	}, [keyword, goToSearch]);
 
 	return (
 		<div className="movie-search">

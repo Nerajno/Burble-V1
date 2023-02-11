@@ -12,7 +12,6 @@ describe('', () => {
     cy.contains('The Shawshank Redemption').should('be.visible');
     cy.contains('Cast').should('be.visible');
     cy.contains('Trailer').should('be.visible');
- xcv
     cy.get('.movie_player').should('be.visible');
   });
 });
