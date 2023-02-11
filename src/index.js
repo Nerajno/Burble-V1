@@ -1,6 +1,15 @@
-import React  from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import App from './App';
+import App from "./App";
+
+/*
+ * Import './commands'
+ *    Cypress.on('uncaught:exception', (err, runnable) => {
+ *    // returning false here prevents Cypress from
+ *  // failing the test
+ *    return false
+ *    })
+ */
 
 // import './commands'
 //    Cypress.on('uncaught:exception', (err, runnable) => {
@@ -10,8 +19,8 @@ import App from './App';
 //    })
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById("root")
 );
