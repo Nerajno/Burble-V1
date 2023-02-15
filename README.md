@@ -1,30 +1,24 @@
 # Burble ~ V1 (COMPLETED )
-A React-Based Movie Search webapp. 
+A React-Based Movie Search webapp.
 
 
 ## Description
 Responsive Movie app using React, the TMDB api and Sass. It was used to
-retool or get a better understanding of React, theMovieDb api for movie info and search 
-functionalities and Sass for styling. 
+retool or get a better understanding of React, themovieDb api for movie info and search 
+functionalities and Sass for styling and Cypress for testing. 
 
-- Reference - https://youtu.be/ntYXj9W1Ez8
+Original Reference material - https://youtu.be/ntYXj9W1Ez8
 
-
-Improvements to be included :
-- Fix branding to Burble. 
+Changes to be included :
+- Fix branding to a unique branding ( icon included). 
 - Link to Github repo in the footer.
 - Sticky navbar.
-- A sort items feature ( genre, alphabetically, ratings[?])
 - filtered Results (it displays results as you type).
 - Themed using NetFlix's theme.
 - Themed footer.
 - Fix slider
 
-- Login/Sign up (MyBurble/stretchGoal0)
-- Implement CRUD app version (MyBurble/stretchGoal1)
-- Uses mongodb to save users choices.(MyBurble/stretchGoal3)
-
-## Screenshot
+## Screenshot/ Youtube walk through
 
 
 ### Dependencies/Resources
@@ -44,23 +38,19 @@ Uses:
 - [x] Add back to portfolio btn or back to github btn.
 - [x] Create a sticky navbar.
 - [x] Integrate Cypress testing.
-- [ ] Create 7  handwritten tests ( See Mark's notes) && this https://tinyurl.com/yeyt7fum
-- [ ] Hide api~addresses/ paths ??
-- [ ] Filter by genre, year, rating.
-- [ ] Implement pagination for each category or page or search params. ~~~
+- [ ] Create 7  handwritten tests ( See Mark's notes) && this https://tinyurl.com/yeyt7fum~
 - [ ] Create a code style// implement a linter that runs via git push 
 - [ ] Create a test that runs before merging to main as a GH actions.
-- [ ] Update the ReadMe.
+- [ ] Update the ReadMe to project standards. 
 
 
 
 ### Todos ~ Level 2
-- [ ] Refactor the code
+- [ ] Refactor the code in TypeScript
 
 
- 
 ## Help/Suggestions
-Create issues on the repo if errors are seen and they will be addressed them.
+Create issues on the repo if errors are seen and they will be addressed them after todos are completed.
 
 ## Authors
 [Me/@Nerajno](https://twitter.com/nerajno)  
@@ -105,4 +95,3 @@ Inspiration, code snippets, etc.
 ## Stuff that I still question
 - Mixins
 - Cypress functions ( cy.spy)
-
