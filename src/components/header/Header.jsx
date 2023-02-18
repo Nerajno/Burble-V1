@@ -66,3 +66,54 @@ const Header = () =>{
 }
 
 export default Header;
+
+// create a cypress test for the header component that test the file above
+// and make sure it passes  (you can use the test file above as a guide)
+
+// describe('Header Component', () => {
+//     beforeEach(() => {
+//         cy.visit('/');
+//     });
+
+//     it('displays all expected links', () => {
+//         const headerNav = [
+//             { 
+//                 display: 'Home',
+//                 path: '/'
+//             },
+//             {
+//                 display: 'Movies',
+//                 path: '/movie'
+//             }, 
+//             {
+//                 display: 'TV Series',
+//                 path: '/tv'
+//             }
+//         ];
+
+//         cy.get('.header__nav')
+//             .find('li')
+//             .each(($el, index) => {
+//                 cy.wrap($el)
+//                     .should('contain', headerNav[index].display)
+//                     .find('a')
+//                     .should('have.attr', 'href', headerNav[index].path);
+//             });
+//     });
+
+//     it('links are real links with <a> tags', () => {
+//         cy.get('.header__nav')
+//             .find('li')
+//             .each(($el) => {
+//                 cy.wrap($el)
+//                     .find('a')
+//                     .should('have.attr', 'href');
+//             });
+//     });
+
+//     it('should have a logo image with alt text', () => {
+//         cy.get('.logo')
+//             .find('img')
+//             .should('have.attr', 'alt');
+//     });
+// }

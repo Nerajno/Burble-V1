@@ -1,43 +1,11 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 
-describe('Header', () => {
-  beforeEach(() => {
-    cy.mount(<Header></Header>);
-  });
-
-  it('should render the header ', () => {
-    cy.get('header').should('not.have.class', 'header');
-  });
-
-  it('should add the "shrink" class to the header on scroll', () => {
-    cy.get('.header').should('not.have.class', 'shrink');
-    cy.get('body').scrollTo('top');
-    cy.get('.header').should('have.class', 'shrink');
-  });
-});
-
-
-  // it('renders', () => {
-  //   cy.get('.header').should('have.class', 'header');
-  // });
-
-
-
-
-
-//   it('should render the logo', () => {
-//     cy.get('.header .logo img').should('have.attr', 'src', 'BurbleLogo.png');
-//     cy.get('.header .logo a').should('have.text', 'Burble');
+// describe("<Header />", () => {
+//   it("should render the header", () => {
+//     cy.mount(<Header />);
+//     cy.get('header').should('not.have.class', 'header');
 //   });
-
-//   it('should render the navigation links', () => {
-//     cy.get('.header__nav li').should('have.length', 4);
-//     cy.get('.header__nav li').first().should('have.text', 'Home');
-//     cy.get('.header__nav li').eq(1).should('have.text', 'Movies');
-//     cy.get('.header__nav li').eq(2).should('have.text', 'TV Series');
-//   });
-
   // it('should add the "shrink" class to the header on scroll', () => {
   //   cy.get('.header').should('not.have.class', 'shrink');
   //   cy.get('body').scrollTo('top');
@@ -45,9 +13,59 @@ describe('Header', () => {
   // });
 // });
 
+// });
 
 // Test conditions
 // Header
 // - has all expected links.
 // - they are real links with <a> tags.
 // - should have a logo image with alt text.
+
+
+describe('Header Component', () => {
+  beforeEach(() => {
+    cy.visit('/');
+  });
+
+  it('displays all expected links', () => {
+    const headerNav = [
+      { 
+          display: 'Home',
+          path: '/'
+      },
+      {
+          display: 'Movies',
+          path: '/movie'
+      }, 
+      {
+          display: 'TV Series',
+          path: '/tv'
+      }
+    ];
+
+    cy.get('.header__nav')
+      .find('li')
+      .each(($el, index) => {
+        cy.wrap($el)
+          .should('contain', headerNav[index].display)
+          .find('a')
+          .should('have.attr', 'href', headerNav[index].path);
+      });
+  });
+
+  it('links are real links with <a> tags', () => {
+    cy.get('.header__nav')
+      .find('li')
+      .each(($el) => {
+        cy.wrap($el)
+          .find('a')
+          .should('have.prop', 'tagName', 'A');
+      });
+  });
+
+  it('has a logo image with alt text', () => {
+    cy.get('.logo')
+      .find('img')
+      .should('have.attr', 'alt');
+  });
+});

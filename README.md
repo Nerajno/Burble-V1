@@ -46,7 +46,7 @@ Uses:
 
 
 ### Todos ~ Level 2
-- [ ] Refactor the code in TypeScript
+- [ ] Refactor the whole app in TypeScript
 
 
 ## Help/Suggestions
