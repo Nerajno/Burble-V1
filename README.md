@@ -94,4 +94,4 @@ Inspiration, code snippets, etc.
 
 ## Stuff that I still question
 - Mixins
-- Cypress functions ( cy.spy)
+- Cypress functions (cy.spy)
