@@ -4,12 +4,14 @@ import HeroSlide from './HeroSlide';
 describe('<HeroSlide />', () => {
     it('renders the hero slide', () => {
         cy.mount(<HeroSlide />);
-        cy.get(".hero-slide__item").should('exist');
+        cy.get(".hero-slide").should('exist');
     });
-    // it('renders the hero slide image', () => {
-    //     cy.mount(<HeroSlide />);
-    //     cy.get('[data-testid="hero-slide-image"]').should('exist');
-    // });
+    it('renders hero slide with a title and paragraph ', () => {
+        cy.mount(<HeroSlide />);
+        cy.get(".title").should('exist'); 
+        cy.get(".overview").should('exist');
+        // cy.contains('').should()
+    });
     // it('renders the hero slide title', () => {
     //     cy.mount(<HeroSlide />);
     //     cy.get('[data-testid="hero-slide-title"]').should('exist');
