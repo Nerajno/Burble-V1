@@ -25,7 +25,6 @@ const HeroSlide = () => {
 					params,
 				});
 				setMovieItems(response.results.slice(1, 4)); // gets the first 4 movies and is response.results.slice( 1,3) in the tutorial
-				// console.log(response);
 			} catch (error) {
 				console.log(error, "Error getting movies"); // changed from 'error', this gives us
 			}
@@ -63,7 +62,7 @@ const HeroSlide = () => {
 const HeroSlideItem = (props) => {
 	let history = useHistory();
 	const item = props.item;
-
+	// console.log(item, "item");
 	const background = apiConfig.originalImage(
 		item.backdrop_path ? item.backdrop_path : item.poster_path
 	);
@@ -73,7 +72,6 @@ const HeroSlideItem = (props) => {
 		const videos = await tmdbApi.getVideos(category.movie, item.id);
 		if (videos.results.length > 0) {
 			const videSrc = "https://www.youtube.com/embed/" + videos.results[0].key;
-			// console.log(videSrc);
 			modal
 				.querySelector(".modal__content > iframe")
 				.setAttribute("src", videSrc);
@@ -93,8 +91,8 @@ const HeroSlideItem = (props) => {
 					<h2 className="title">{item.title}</h2>
 					<div className="overview">{item.overview}</div>
 					<div className="btns">
-						<Button onClick={() => history.push("/movie/" + item.id)}>
-							Watch Now
+						<Button onClick={(item) => history.push("/movie/" + item.id)}>
+							View More
 						</Button>
 						<OutlineButton onClick={setModalActive}>
 							Watch Trailer

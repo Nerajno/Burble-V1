@@ -10,12 +10,12 @@ describe('<HeroSlide />', () => {
         cy.mount(<HeroSlide />);
         cy.get(".title").should('exist'); 
         cy.get(".overview").should('exist');
-        // cy.contains('').should()
     });
-    // it('renders the hero slide title', () => {
-    //     cy.mount(<HeroSlide />);
-    //     cy.get('[data-testid="hero-slide-title"]').should('exist');
-    // });
+    it('renders watch now button that works', () => {
+        cy.mount(<HeroSlide />);
+        cy.get('.btn').contains('Watch Now').should('exist');
+        cy.get('.btn').click({ multiple: true });
+     });
     // it('renders the hero slide subtitle', () => {
     //     cy.mount(<HeroSlide />);
     //     cy.get('[data-testid="hero-slide-subtitle"]').should('exist');

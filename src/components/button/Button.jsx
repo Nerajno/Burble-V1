@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "./button.scss";
 
 const Button = (props) => {
+	console.log(props, "1"); //Passing down class is broken
 	return (
 		<button
 			className={`btn ${props.className}`}
@@ -15,6 +16,7 @@ const Button = (props) => {
 };
 
 export const OutlineButton = (props) => {
+
 	return (
 		<Button
 			className={`btn-outline ${props.className}`}
@@ -30,3 +32,7 @@ Button.propTypes = {
 };
 
 export default Button;
+
+
+// console.log(props, "1"); || Passing down class is broken
+// console.log(props, "2"); || Passing down class is broken
