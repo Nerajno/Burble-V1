@@ -59,10 +59,11 @@ const HeroSlide = () => {
 	);
 };
 
+
 const HeroSlideItem = (props) => {
 	let history = useHistory();
 	const item = props.item;
-	// console.log(item, "item");
+	console.log(item, "item");
 	const background = apiConfig.originalImage(
 		item.backdrop_path ? item.backdrop_path : item.poster_path
 	);

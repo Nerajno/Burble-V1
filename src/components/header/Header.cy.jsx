@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 
-// describe("<Header />", () => {
+describe("<Header />", () => {
 //   it("should render the header", () => {
 //     cy.mount(<Header />);
 //     cy.get('header').should('not.have.class', 'header');
@@ -13,7 +13,7 @@ import Header from "./Header";
   // });
 // });
 
-// });
+});
 
 // Test conditions
 // Header
