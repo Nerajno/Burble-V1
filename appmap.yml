@@ -1,0 +1,23 @@
+name: Burble
+packages:
+  - path: build/static/css
+  - path: build/static/js
+  - path: src/components/button
+  - path: src/components/footer
+  - path: src/components/header
+  - path: src/components/hero_slide
+  - path: src/components/input
+  - path: src/components/modal
+  - path: src/components/movie-card
+  - path: src/components/movie-grid
+  - path: src/components/movie-list
+  - path: src/components/page-header
+  - path: src/components/pages/detail
+  - path: src/components/toggle
+  - path: cypress/component
+  - path: cypress/e2e
+  - path: cypress/plugins
+  - path: cypress/support
+  - path: src
+language: javascript
+appmap_dir: tmp/appmap

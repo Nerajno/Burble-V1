@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@appland/appmap-agent-js": "^13.5.2",
     "@emotion/react": "^11.10.5",
     "@mantine/core": "^5.9.4",
     "@mantine/hooks": "^5.9.4",
