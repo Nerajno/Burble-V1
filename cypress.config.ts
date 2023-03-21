@@ -1,19 +1,22 @@
 const {defineConfig} = require("cypress");
+const webpackConfig = require('./config/webpack.config');
 
-module.exports = defineConfig({
+
+export default defineConfig({
 	projectId: "y47h8y",
 	e2e: {
 		experimentalStudio: true,
 		setupNodeEvents(on, config) {
 			return require("./cypress/plugins/index.js")(on, config);
 		},
-		baseUrl: "http://localhost:2000/",
+		baseUrl: "./",
 	},
 
 	component: {
 		devServer: {
 			framework: "create-react-app",
 			bundler: "webpack",
+			webpackConfig,
 		},
 	},
 });
