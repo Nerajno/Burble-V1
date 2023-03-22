@@ -2,7 +2,7 @@ const {defineConfig} = require("cypress");
 const webpackConfig = require('./config/webpack.config');
 
 
-export default defineConfig({
+module.exports = defineConfig({
 	projectId: "y47h8y",
 	e2e: {
 		experimentalStudio: true,
