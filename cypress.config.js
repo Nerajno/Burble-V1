@@ -1,5 +1,5 @@
 const {defineConfig} = require("cypress");
-const webpackConfig = require('./config/webpack.config');
+// const webpackConfig = require('./config/webpack.config');
 
 
 module.exports = defineConfig({
@@ -9,14 +9,14 @@ module.exports = defineConfig({
 		setupNodeEvents(on, config) {
 			return require("./cypress/plugins/index.js")(on, config);
 		},
-		baseUrl: "./",
+		baseUrl: "http://localhost:2000",
 	},
 
 	component: {
 		devServer: {
 			framework: "create-react-app",
 			bundler: "webpack",
-			webpackConfig,
+		//	webpackConfig,
 		},
 	},
 });
