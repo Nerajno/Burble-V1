@@ -47,6 +47,7 @@ Uses:
 
 ### Todos ~ Level 2
 - [ ] Refactor the code in TypeScript
+- [ ] Add a hover to the search (white highlight to the input). 
 
 
 ## Help/Suggestions
