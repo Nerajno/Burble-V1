@@ -38,7 +38,7 @@ Uses:
 - [x] Add back to portfolio btn or back to github btn.
 - [x] Create a sticky navbar.
 - [x] Integrate Cypress testing.
-- [ ] Create 7  handwritten tests ( See Mark's notes) && this https://tinyurl.com/yeyt7fum~
+- [ ] Create 7  handwritten tests ( See Mark's notes) && this => https://tinyurl.com/yeyt7fum
 - [ ] Create a code style// implement a linter that runs via git push 
 - [ ] Create a test that runs before merging to main as a GH actions.
 - [ ] Update the ReadMe to project standards. 
