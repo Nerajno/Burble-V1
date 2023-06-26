@@ -3,9 +3,9 @@ A React-Based Movie Search webapp.
 
 
 ## Description
-Responsive Movie app using React, the TMDB api and Sass. It was used to
-retool or get a better understanding of React, themovieDb api for movie info and search
-functionalities and Sass for styling and Cypress for testing.
+Responsive Movie app using React, the TMDB API, and Sass. It was used to
+retool or get a better understanding of React, themovieDb API for movie info and search
+functionalities and Sass for styling, and Cypress for testing.
 
 Original Reference material - https://youtu.be/ntYXj9W1Ez8
 
