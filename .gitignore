@@ -27,3 +27,7 @@ yarn-error.log*
 .env
 .env.test
 
+# Cypress stuff
+cypress/videos
+cypress/screenshots
+
