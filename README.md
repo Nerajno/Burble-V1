@@ -18,7 +18,8 @@ Changes to be included :
 - Themed footer.
 - Fix slider
 
-## Screenshot/ Youtube walk through
+## Screenshot/ Youtube Walkthrough
+![](https://github.com/Nerajno/Burble-V1/blob/DevBranch/src/assets/walkthrough-vids/ezgif.com-video-to-gif.gif)
 
 
 ### Dependencies/Resources
