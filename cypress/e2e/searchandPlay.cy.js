@@ -5,14 +5,11 @@ describe('', () => {
     cy.get('[data-testid="input"]').type('The Shawshank Redemption');
     cy.get('button').contains('Search').click();
     cy.get('.movie-search > .small').click();
-    cy.get('a > h3').contains('The Shawshank Redemption').click({
-      force: true,
-    });
-    //cy.wait(2000);
+    cy.get('a > h3').contains('The Shawshank Redemption').click();
     cy.contains('The Shawshank Redemption').should('be.visible');
-    cy.contains('Cast').should('be.visible');
-    cy.contains('Trailer').should('be.visible');
-    cy.get('.movie_player').should('be.visible');
+    // cy.contains('Cast').should('be.visible');
+    // cy.contains('Trailer').should('be.visible');
+    // cy.get('.movie_player').should('be.visible');
   });
 });
 

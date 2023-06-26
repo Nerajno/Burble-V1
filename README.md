@@ -4,13 +4,13 @@ A React-Based Movie Search webapp.
 
 ## Description
 Responsive Movie app using React, the TMDB api and Sass. It was used to
-retool or get a better understanding of React, themovieDb api for movie info and search 
-functionalities and Sass for styling and Cypress for testing. 
+retool or get a better understanding of React, themovieDb api for movie info and search
+functionalities and Sass for styling and Cypress for testing.
 
 Original Reference material - https://youtu.be/ntYXj9W1Ez8
 
 Changes to be included :
-- Fix branding to a unique branding ( icon included). 
+- Fix branding to a unique branding ( icon included).
 - Link to Github repo in the footer.
 - Sticky navbar.
 - filtered Results (it displays results as you type).
@@ -39,26 +39,27 @@ Uses:
 - [x] Create a sticky navbar.
 - [x] Integrate Cypress testing.
 - [ ] Create 7  handwritten tests ([See Mark's notes](https://docs.google.com/document/d/1RLlRwHr90q-HfWjUWsA4Y5yxi5X8cYqiJZ8sYVy3yZE/edit?usp=sharing)) && this => https://tinyurl.com/yeyt7fum
-- [ ] Create a code style// implement a linter that runs via git push 
+- [ ] Create a code style// implement a linter that runs via git push
 - [ ] Create a test that runs before merging to main as a GH actions.
-- [ ] Update the ReadMe to project standards. 
+- [ ] Update the ReadMe to project standards.
 
 
 
 ### Todos ~ Level 2
 - [ ] Refactor the code in TypeScript
-- [ ] Add a hover to the search (white highlight to the input). 
+- [ ] Add a hover to the search (white highlight to the input).
+- [ ] Refactor the whole app in TypeScript
 
 
 ## Help/Suggestions
 Create issues on the repo if errors are seen and they will be addressed them after todos are completed.
 
 ## Authors
-[Me/@Nerajno](https://twitter.com/nerajno)  
+[Me/@Nerajno](https://twitter.com/nerajno)
 
 ## License
 MIT License
-Copyright (c) [2021] [Me/@Nerajno](https://twitter.com/nerajno)  
+Copyright (c) [2021] [Me/@Nerajno](https://twitter.com/nerajno)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -89,10 +90,10 @@ Inspiration, code snippets, etc.
 - New-er Sass methods (@use && @forward).
 - Pathing structure ( relative or absolute).
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
-- Implementation of Sass in a react env and good reasonings why. 
+- Implementation of Sass in a react env and good reasonings why.
 - Mixins and its modern implementation.
 - Cypress and cypress studio
 
 ## Stuff that I still question
 - Mixins
-- Cypress functions ( cy.spy)
+- Cypress functions (cy.spy)
