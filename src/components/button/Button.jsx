@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import "./button.scss";
 
 const Button = (props) => {
-	console.log( props, "find id"); //Passing down className is broken
 	return (
 		<button
 			className={`btn ${props.className}`}
@@ -33,7 +32,3 @@ Button.propTypes = {
 };
 
 export default Button;
-
-// TODO: Find where the props is coming from.
-// console.log(props, "1"); || Passing down class is broken
-// console.log(props, "2"); || Passing down class is broken

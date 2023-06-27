@@ -44,6 +44,9 @@ Uses:
 - [ ] Create a test that runs before merging to main as a GH actions.
 - [ ] Update the ReadMe to project standards.
 
+### Todos ~ Bugs
+- [ ]
+
 
 
 ### Todos ~ Level 2
@@ -53,7 +56,7 @@ Uses:
 
 
 ## Help/Suggestions
-Create issues on the repo if errors are seen and they will be addressed them after todos are completed.
+~~Create issues on the repo if errors are seen and they will be addressed them after todos are completed.~~ See issues on github. 
 
 ## Authors
 [Me/@Nerajno](https://twitter.com/nerajno)
@@ -93,7 +96,7 @@ Inspiration, code snippets, etc.
 - Environmental variables in Netlify => https://tinyurl.com/62pcv6ep
 - Implementation of Sass in a react env and good reasonings why.
 - Mixins and its modern implementation.
-- Cypress and cypress studio
+- Cypress and cypress studio.
 
 ## Stuff that I still question
 - Mixins
