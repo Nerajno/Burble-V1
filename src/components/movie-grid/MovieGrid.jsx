@@ -3,7 +3,6 @@ import "./movie-grid.scss";
 import MovieCard from "../movie-card/MovieCard";
 import {useParams, useHistory} from "react-router-dom";
 import {OutlineButton} from "../button/Button";
-import Input from "../input/Input";
 
 import tmdbApi, {category, movieType, tvType} from "../../api/tmdbApi";
 import {Button} from "react-bootstrap";
@@ -115,7 +114,6 @@ const MovieSearch = (props) => {
 
 	return (
 		<div className="movie-search">
-
 			<Button className="small" onClick={goToSearch}>
 				Search
 			</Button>
