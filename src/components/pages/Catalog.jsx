@@ -6,7 +6,6 @@ import MovieGrid from "../movie-grid/MovieGrid";
 
 const Catalog = () => {
 	const {category} = useParams();
-	console.log(category);
 	return (
 		<>
 			<PageHeader>

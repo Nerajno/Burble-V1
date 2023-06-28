@@ -15,7 +15,6 @@ const Button = (props) => {
 };
 
 export const OutlineButton = (props) => {
-	console.log( props, "2"); //Passing down className is broken
 	return (
 		<Button
 			className={`btn-outline ${props.className}`}
@@ -30,5 +29,4 @@ Button.propTypes = {
 	onClick: PropTypes.func,
 	// className: PropTypes.string.isRequired,
 };
-
 export default Button;
